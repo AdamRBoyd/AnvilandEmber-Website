@@ -6,19 +6,30 @@ import { Link } from '../..';
 
 const StyledNav = styled.nav`
   display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   list-style: none;
+  padding-bottom: 0.75rem;
   > :not(:first-child) {
-    margin-left: 1.5rem;
+    margin-left: 2rem;
   }
-  margin: 0.5rem 0;
   a {
     font-weight: 300;
-    color: ${palette('grayscale', 4)};
-    font-size: 1.1rem;
+    color: ${palette('grayscale', 3)};
+    font-size: 1.3rem;
     &.active {
       color: ${palette('primary', 0)};
     }
   }
+`;
+
+const StyledLink = styled(Link)``;
+
+const ImageWrapper = styled.img`
+  margin: 0 1rem 0.25rem ;
+  align-self: center;
+  height: 60px;
 `;
 
 const PrimaryNavigation = (props) => {
@@ -36,6 +47,9 @@ const PrimaryNavigation = (props) => {
       >
         Gallery
       </Link>
+      <StyledLink to='/'>
+        <ImageWrapper alt='Logo' src='/images/AnvilEmberLogo.png' />
+      </StyledLink>
       <Link
         to='/about'
         className={({ isActive }) => (isActive ? 'active' : null)}
@@ -47,12 +61,6 @@ const PrimaryNavigation = (props) => {
         className={({ isActive }) => (isActive ? 'active' : null)}
       >
         Contact
-      </Link>
-      <Link
-        to='/code'
-        className={({ isActive }) => (isActive ? 'active' : null)}
-      >
-        Code
       </Link>
     </StyledNav>
   );

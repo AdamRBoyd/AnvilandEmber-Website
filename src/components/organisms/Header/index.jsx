@@ -23,17 +23,13 @@ const LogoSaleWrapper = styled.div`
 
 const NavWrapper = styled.div`
   display: flex;
+  flex-direction: row;
   justify-content: center;
-  padding-bottom: 0.1rem;
-  font-family: ${font('primary')};
-  background-color: ${palette('grayscale', 1)};
-  width: 100%;
-`;
 
-const ImageWrapper = styled.img`
-  margin-top: 0.5rem;
-  align-self: center;
-  height: 60px;
+  align-items: center;
+  font-family: ${font('primary')};
+  background-color: ${palette('grayscale', 0)};
+  width: 100%;
 `;
 
 const SaleStyle = css`
@@ -79,15 +75,10 @@ const SalePlaceholder = styled.div`
   background-color: transparent;
 `;
 
-const StyledLink = styled(Link)``;
-
 const Header = (props) => {
   return (
     <>
       <LogoSaleWrapper>
-        <StyledLink to='/'>
-          <ImageWrapper alt='Logo' src='/images/Signature.png' />
-        </StyledLink>
         {SALE_ON ? (
           <SaleWrapper>
             <SaleTitle>{SALE_TITLE}</SaleTitle>
