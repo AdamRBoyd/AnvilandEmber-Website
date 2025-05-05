@@ -1,7 +1,7 @@
 import { font, palette } from 'styled-theme';
 import styled, { css } from 'styled-components';
 
-import { Link, PrimaryNavigation } from '../..';
+import { PrimaryNavigation } from '../..';
 import {
   END,
   SALE_ON,

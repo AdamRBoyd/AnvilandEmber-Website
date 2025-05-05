@@ -1,4 +1,3 @@
-import { size } from 'styled-theme';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
@@ -10,9 +9,6 @@ const Wrapper = styled.div`
   min-height: 98.1vh;
   box-sizing: border-box;
 
-  @media screen and (max-width: 640px) {
-    padding-top: 2rem;
-  }
 `;
 
 const StyledHeader = styled.header`

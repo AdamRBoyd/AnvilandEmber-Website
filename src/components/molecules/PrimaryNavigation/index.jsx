@@ -1,18 +1,25 @@
-import { palette } from 'styled-theme';
+import { font, palette } from 'styled-theme';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 import { Link } from '../..';
 
 const StyledNav = styled.nav`
+  background-image: url('/images/Divider7.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 95px;
+  
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   list-style: none;
-  padding-bottom: 0.75rem;
+  padding-bottom: 0.25rem;
   > :not(:first-child) {
-    margin-left: 2rem;
+    margin-left: 2.5rem;
   }
   a {
     font-weight: 300;
@@ -24,44 +31,46 @@ const StyledNav = styled.nav`
   }
 `;
 
-const StyledLink = styled(Link)``;
+const StyledLink = styled(Link)`
+  font-family: ${font('primary')};
+`;
 
 const ImageWrapper = styled.img`
-  margin: 0 1rem 0.25rem ;
+  margin: 0.75rem 0 0 ;
   align-self: center;
-  height: 60px;
+  height: 105px;
 `;
 
 const PrimaryNavigation = (props) => {
   return (
     <StyledNav {...props}>
-      <Link
+      <StyledLink
         to='/shop'
         className={({ isActive }) => (isActive ? 'active' : null)}
       >
         Shop
-      </Link>
-      <Link
+      </StyledLink>
+      <StyledLink
         to='/gallery'
         className={({ isActive }) => (isActive ? 'active' : null)}
       >
         Gallery
-      </Link>
-      <StyledLink to='/'>
-        <ImageWrapper alt='Logo' src='/images/AnvilEmberLogo.png' />
       </StyledLink>
-      <Link
+      <StyledLink to='/'>
+        <ImageWrapper alt='Logo' src='/images/LogoRondel.png' />
+      </StyledLink>
+      <StyledLink
         to='/about'
         className={({ isActive }) => (isActive ? 'active' : null)}
       >
         About
-      </Link>
-      <Link
+      </StyledLink>
+      <StyledLink
         to='/contact'
         className={({ isActive }) => (isActive ? 'active' : null)}
       >
         Contact
-      </Link>
+      </StyledLink>
     </StyledNav>
   );
 };

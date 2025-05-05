@@ -45,3 +45,17 @@ body {
 *::-webkit-scrollbar-corner {
   background: transparent;
 }
+
+@font-face {
+  font-family: 'Cinzel';
+  src: url('./fonts/Cinzel-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('./fonts/Montserrat-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}

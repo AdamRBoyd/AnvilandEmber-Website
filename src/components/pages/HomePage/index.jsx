@@ -16,21 +16,37 @@ const Wrapper = styled.div`
   }
 `;
 
+const MainLogoWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+  `;
+
 const MainLogo = styled.img`
 `;
 
 const MainImage = styled.img`
 `;
 
+const DividerImg = styled.img`
+`;
+
 const HomePage = () => {
   return (
     <Wrapper>
-      <div>
+      <MainLogoWrapper>
         <MainLogo
           alt='Main Logo'
-          src='/images/SplashLogo.png'
+          src='/images/SplashLogo2.png'
         />
-      </div>
+        <DividerImg
+          alt='Divider Image'
+          src='/images/DividerLine.png'
+        />
+      </MainLogoWrapper>
       <div>
         <Link to='/shop'>
           <MainImage
