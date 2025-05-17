@@ -124,8 +124,6 @@ const Shop = () => {
   const [showSold, setShowSold] = useState(true);
   const navigate = useNavigate();
 
-  console.log('Shop page loaded with category:', currentPage);
-
   // Load the listings data from the JSON files based on the current category
   const listings = (currentCategory) => {
     switch (currentCategory) {
@@ -235,7 +233,6 @@ const Shop = () => {
           {listingsData.category.map((listing, index) => (
             <Link
               to={`/shop/${currentPage}/${listing.listingId}`}
-              state={{ listing }}
               title={listing.title}
               key={listing.listingId}
             >
