@@ -15,10 +15,7 @@ const LogoSaleWrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
-  padding: 0.5rem;
-  font-family: ${font('primary')};
-  background-color: ${palette('grayscale', 0)};
+  background-color: transparent;
 `;
 
 const NavWrapper = styled.div`
@@ -37,6 +34,8 @@ const SaleStyle = css`
   font-family: ${font('primary')};
   stroke: ${palette('grayscale', 0)};
   font-size: 1rem;
+  width: 200px;
+  text-align: center;
 `;
 
 const SaleTitle = styled.label`
@@ -48,7 +47,6 @@ const SalePercentage = styled.label`
   ${SaleStyle}
   font-size: 1.5rem;
   font-weight: 600;
-  margin: 0 1.5rem;
 `;
 
 const SaleDate = styled.label`
@@ -57,18 +55,22 @@ const SaleDate = styled.label`
 `;
 
 const SaleWrapper = styled.div`
+  z-index: -99;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  background-color: ${palette('danger', 2)};
-  border: 1px solid ${palette('danger', 0)};
-  border-radius: 1rem;
-  height: 1.5rem;
-  width: 350px;
-  padding: 0.3rem 1.25rem 0.5rem 1.25rem;
-  margin: 0 2rem;
+  background-image: url('/images/SaleBannerBG.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 99.4vw;
+  height: 25px;
+  border: 1px solid ${palette('danger', 1)};
+  padding: 0.3rem 0 0.5rem 0;
+  font-family: ${font('primary')};
+  text-shadow: 1px 1px 3px ${palette('grayscale', 0)};
 `;
 
 const SalePlaceholder = styled.div`
@@ -78,6 +80,9 @@ const SalePlaceholder = styled.div`
 const Header = (props) => {
   return (
     <>
+      <NavWrapper>
+        <PrimaryNavigation />
+      </NavWrapper>
       <LogoSaleWrapper>
         {SALE_ON ? (
           <SaleWrapper>
@@ -95,9 +100,6 @@ const Header = (props) => {
           <SalePlaceholder />
         )}
       </LogoSaleWrapper>
-      <NavWrapper>
-        <PrimaryNavigation />
-      </NavWrapper>
     </>
   );
 };

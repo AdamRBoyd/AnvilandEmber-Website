@@ -1,4 +1,3 @@
-import { useLocation } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 import {
@@ -7,11 +6,19 @@ import {
   SALE_TITLE,
 } from '../../../constants/SaleDate';
 
+import { AllListings } from '../../../json';
+
 import { PageTitleFrame, ShopListingCard, Spacer } from '../..';
 
+function getListingById(id) {
+  const listing = AllListings.findIndex(
+    (listing) => listing.listingId == id
+  );
+  return listing || null;
+}
+
 const ShopListing = () => {
-  const { state } = useLocation();
-  const { listing } = state;
+  const listing = AllListings.at(getListingById(window.location.pathname.split('/')[3]));
 
   return (
     <>

@@ -11,19 +11,18 @@ const StyledNav = styled.nav`
   background-position: center;
   width: 100vw;
   height: 95px;
-  
+  margin-top: 0.5rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   list-style: none;
   padding-bottom: 0.25rem;
-  > :not(:first-child) {
-    margin-left: 2.5rem;
-  }
+
   a {
     font-weight: 300;
-    color: ${palette('grayscale', 3)};
+    color: ${palette('grayscale', 5)};
+    text-shadow: 2px 2px 5px ${palette('grayscale', 0)};
     font-size: 1.3rem;
     &.active {
       color: ${palette('primary', 0)};
@@ -33,12 +32,14 @@ const StyledNav = styled.nav`
 
 const StyledLink = styled(Link)`
   font-family: ${font('primary')};
+  width: 150px;
+  text-align: center;
 `;
 
 const ImageWrapper = styled.img`
   margin: 0.75rem 0 0 ;
   align-self: center;
-  height: 105px;
+  height: 125px;
 `;
 
 const PrimaryNavigation = (props) => {

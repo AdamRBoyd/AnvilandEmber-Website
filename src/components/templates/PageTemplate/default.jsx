@@ -8,6 +8,7 @@ const Wrapper = styled.div`
   flex-direction: column;
   min-height: 98.1vh;
   box-sizing: border-box;
+  background-image: url('/images/LinenBackground.jpg');
 
 `;
 

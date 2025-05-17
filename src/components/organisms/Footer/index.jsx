@@ -48,7 +48,7 @@ const Footer = (props) => {
         <StyledIcon name='Instagram' icon='instagram' size={20} />
         <Socials>Follow me!!</Socials>
       </StyledLink>
-      <Credits>&copy; 2022 Adam Boyd Designs</Credits>
+      <Credits>&copy; 2025 Anvil and Ember Metalworks</Credits>
     </Wrapper>
   );
 };

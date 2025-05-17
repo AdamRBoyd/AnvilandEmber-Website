@@ -119,6 +119,7 @@ const FreeShippingFlag = styled.div`
 
 const Shop = () => {
   const { state } = useLocation();
+  
   const [currentPage] = useState(state?.category || 'all');
   const [showSold, setShowSold] = useState(true);
   const navigate = useNavigate();

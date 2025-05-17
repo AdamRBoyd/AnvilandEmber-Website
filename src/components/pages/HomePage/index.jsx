@@ -22,16 +22,52 @@ const MainLogoWrapper = styled.div`
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   `;
 
 const MainLogo = styled.img`
 `;
 
-const MainImage = styled.img`
+const DividerImg = styled.img`
 `;
 
-const DividerImg = styled.img`
+const ShopSectionWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: center;
+  background-image: url('/images/SplashShopBackground.png');
+  background-repeat: no-repeat;
+  background-position: left;
+  height: 768px;
+  width: 100%;
+  margin: 3rem;
+
+  @media screen and (max-width: 640px) {
+    height: 40vh;
+  }
+`;
+
+const RightWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: center;
+  width: 50%;
+  margin-top: 2rem;
+
+  @media screen and (max-width: 640px) {
+    width: 25%;
+  }
+`;
+
+const LabelFlat = styled.img`
+  width: 100%;
+  height: auto;
+`;
+
+const LowerDividerImg = styled.img`
+  margin-bottom: 3rem;
 `;
 
 const HomePage = () => {
@@ -47,14 +83,20 @@ const HomePage = () => {
           src='/images/DividerLine.png'
         />
       </MainLogoWrapper>
-      <div>
-        <Link to='/shop'>
-          <MainImage
-            alt='Landing Page Main Image'
-            src='/images/LandingPageImage.png'
-          />
-        </Link>
-      </div>
+      <ShopSectionWrapper>
+        <RightWrapper>
+          <Link to='/shop'>
+            <LabelFlat
+              alt='Label Flat'
+              src='/images/ShopLabel.png'
+            />
+          </Link>
+        </RightWrapper>
+      </ShopSectionWrapper>
+      <LowerDividerImg
+        alt='Divider Image'
+        src='/images/DividerLine.png'
+      />
     </Wrapper>
   );
 };
