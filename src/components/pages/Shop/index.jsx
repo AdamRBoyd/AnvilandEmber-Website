@@ -120,9 +120,11 @@ const FreeShippingFlag = styled.div`
 const Shop = () => {
   const { state } = useLocation();
   
-  const [currentPage] = useState(state?.category || 'all');
+  const [currentPage, setCurrentPage] = useState(state?.category || 'all');
   const [showSold, setShowSold] = useState(true);
   const navigate = useNavigate();
+
+  console.log('Shop page loaded with category:', currentPage);
 
   // Load the listings data from the JSON files based on the current category
   const listings = (currentCategory) => {
@@ -182,6 +184,7 @@ const Shop = () => {
   const handleFilterChange = (e) => {
     const category = e.target.value;
     const list = listings(category);
+    setCurrentPage(category);
     setListingsData({
       label: listingsData?.label,
       category: sortListings(currentSort, list),

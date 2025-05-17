@@ -12,7 +12,7 @@ import { PageTitleFrame, ShopListingCard, Spacer } from '../..';
 
 function getListingById(id) {
   const listing = AllListings.findIndex(
-    (listing) => listing.listingId == id
+    (listing) => listing.listingId === parseInt(id)
   );
   return listing || null;
 }
