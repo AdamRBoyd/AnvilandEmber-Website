@@ -7,14 +7,7 @@ import { SHOP_CATEGORIES } from '../../../constants/ShopCategories';
 import { SORT_OPTIONS } from '../../../constants/SortOptions';
 import { SALE_ON, SALE_PERCENTAGE } from '../../../constants/SaleDate';
 
-import {
-  AllListings,
-  Earrings,
-  Nose,
-  Pendants,
-  Rings,
-  Sets,
-} from '../../../json';
+import { AllListings } from '../../../json';
 
 import {
   Button,
@@ -119,29 +112,27 @@ const FreeShippingFlag = styled.div`
 
 const Shop = () => {
   const { state } = useLocation();
-  
+
   const [currentPage, setCurrentPage] = useState(state?.category || 'all');
   const [showSold, setShowSold] = useState(true);
   const navigate = useNavigate();
 
+  function checkCategory(category, entry) {
+    return entry.category === category;
+  }
+
   // Load the listings data from the JSON files based on the current category
   const listings = (currentCategory) => {
-    switch (currentCategory) {
-      case 'earrings':
-        return { label: 'Earrings', category: Earrings };
-      case 'nose':
-        return { label: 'Nose', category: Nose };
-      case 'pendants':
-        return { label: 'Pendants', category: Pendants };
-      case 'rings':
-        return { label: 'Rings', category: Rings };
-      case 'sets':
-        return { label: 'Sets', category: Sets };
-      case 'all':
-      default:
-        return { label: 'All', category: AllListings };
+    if (currentCategory === 'all') {
+      return { label: 'All', category: AllListings };
     }
-  };
+
+    currentCategory = currentCategory[0].toUpperCase() + currentCategory.slice(1);
+    const allListings = AllListings.filter((entry) =>
+      checkCategory(currentCategory, entry)
+    );
+    return { label: `${currentCategory}`, category: allListings };
+  }
 
   const [listingsData, setListingsData] = useState(listings(currentPage));
   const [currentSort, setCurrentSort] = useState(SORT_OPTIONS[0].value);
