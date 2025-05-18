@@ -182,7 +182,6 @@ const StockShippingLabel = styled(Label)`
 const ShopListingGalleryCard = ({
   showSold,
   title,
-  images,
   price,
   hasVariations,
   saleOn,
@@ -190,6 +189,7 @@ const ShopListingGalleryCard = ({
   state,
   onClick,
   quantity,
+  listingId,
   ...props
 }) => {
   return (
@@ -197,7 +197,7 @@ const ShopListingGalleryCard = ({
       {state === 'active' || showSold ? (
         <MainWrapper {...props}>
           <ImageOverlay>
-            <ListingImage src={images[0].imageUrl570xN} alt={title} />
+            <ListingImage src={`/images/listings/${listingId}/${listingId}.1.570xN.jpg`} alt={title} />
             <Details className='details'>
               <InStockAndShippingWrapper>
                 <StockShippingLabel>
@@ -255,13 +255,13 @@ ShopListingGalleryCard.propTypes = {
   showSold: PropTypes.bool,
   onClick: PropTypes.func,
   title: PropTypes.string,
-  images: PropTypes.array,
   price: PropTypes.object,
   hasVariations: PropTypes.bool,
   saleOn: PropTypes.bool,
   salePercentage: PropTypes.number,
   state: PropTypes.string,
   quantity: PropTypes.number,
+  listingId: PropTypes.number,
 };
 
 export default ShopListingGalleryCard;

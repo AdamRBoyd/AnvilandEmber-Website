@@ -182,8 +182,6 @@ const ShopListingCard = ({
 
   const [isOpen, setIsOpen] = useState(false);
 
-  console.log('ImageUrl', imageUrl);
-
   // handle close modal
   const closeModal = () => {
     setIsOpen(false);
