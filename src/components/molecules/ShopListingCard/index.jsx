@@ -175,11 +175,14 @@ const ShopListingCard = ({
   saleTitle,
   state,
   quantity,
+  listingId,
   ...props
 }) => {
-  const [imageUrl, setImageUrl] = useState(images[0]);
+  const [imageUrl, setImageUrl] = useState(`/images/listings/${listingId}/${listingId}.1.570xN.jpg`);
 
   const [isOpen, setIsOpen] = useState(false);
+
+  console.log('ImageUrl', imageUrl);
 
   // handle close modal
   const closeModal = () => {
@@ -194,14 +197,14 @@ const ShopListingCard = ({
   return (
     <MainWrapper {...props}>
       <ImageCard>
-        <LargeImage src={imageUrl.imageUrl570xN} onClick={() => openModal()} />
+        <LargeImage src={imageUrl} onClick={() => openModal()} />
         <SmallImageRow>
           {images.map((image, index) => (
             <SmallImage
               key={index}
-              src={image.imageUrl75x75}
-              onMouseOver={() => setImageUrl(image)}
-              onClick={() => setImageUrl(image)}
+              src={`/images/listings/${listingId}/${listingId}.${index + 1}.75x75.jpg`}
+              onMouseOver={() => setImageUrl(`/images/listings/${listingId}/${listingId}.${index + 1}.570xN.jpg`)}
+              onClick={() => setImageUrl(`/images/listings/${listingId}/${listingId}.${index + 1}.570xN.jpg`)}
             />
           ))}
         </SmallImageRow>
@@ -273,7 +276,7 @@ const ShopListingCard = ({
       </DescriptionWrapper>
       <Modal isOpen={isOpen} onClose={closeModal}>
         <ModalImageWrapper
-          src={imageUrl.imageUrl570xN}
+          src={imageUrl}
           alt='Modal'
           onClick={closeModal}
         />
@@ -293,6 +296,7 @@ ShopListingCard.propTypes = {
   saleTitle: PropTypes.string,
   state: PropTypes.string,
   quantity: PropTypes.number,
+  listingId: PropTypes.number,
 };
 
 export default ShopListingCard;
