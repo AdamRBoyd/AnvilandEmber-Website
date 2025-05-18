@@ -197,7 +197,7 @@ const ShopListingCard = ({
       <ImageCard>
         <LargeImage src={imageUrl} onClick={() => openModal()} />
         <SmallImageRow>
-          {images.map((image, index) => (
+          {Array.from({ length: images }).map((_, index) => (
             <SmallImage
               key={index}
               src={`/images/listings/${listingId}/${listingId}.${index + 1}.75x75.jpg`}
@@ -284,7 +284,7 @@ const ShopListingCard = ({
 };
 
 ShopListingCard.propTypes = {
-  images: PropTypes.array,
+  images: PropTypes.number,
   description: PropTypes.array,
   price: PropTypes.object,
   hasVariations: PropTypes.bool,
