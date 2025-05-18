@@ -207,6 +207,7 @@ const ShopListingCard = ({
           ))}
         </SmallImageRow>
       </ImageCard>
+      
       <DescriptionWrapper>
         {description.map((line, index) => (
           <ParagraphWrapper key={`key.${index}`}>{line}</ParagraphWrapper>
