@@ -13,6 +13,7 @@ const Wrapper = styled.div`
   border-radius: 0.5rem;
   box-shadow: 0px 0px 5px ${palette('grayscale', 5)};
   padding: 2rem;
+  background-color: ${palette('grayscale', 6)};
 `;
 
 const ListingImage = styled.img`
@@ -50,8 +51,8 @@ const RatingWrapper = styled.div`
   font-size: 0.9rem;
   font-weight: 600;
   margin-top: 1rem;
-  border-top: 1px solid ${palette('grayscale', 6)};
-  border-bottom: 1px solid ${palette('grayscale', 6)};
+  border-top: 1px solid ${palette('grayscale', 5)};
+  border-bottom: 1px solid ${palette('grayscale', 5)};
   padding: 0.5rem;
 `;
 

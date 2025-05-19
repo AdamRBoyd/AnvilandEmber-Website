@@ -85,7 +85,7 @@ const AboutMe = () => {
         <RightParagraph>
           I am the founder of{' '}
           <Link href={'https://AnvilandEmberMetalworks.etsy.com'} target='_blank'>
-            {' Anvil and Ember on Etsy'}
+            {' Anvil & Ember Metalworks on Etsy'}
           </Link>
           , where I sell my handcrafted silver and copper jewelry. I enjoy using my creativity and attention to detail to design and create beautiful and functional pieces of jewelry. From simple and elegant designs to
           more intricate and personalized pieces, I strive to create something that speaks to each individual wearer.

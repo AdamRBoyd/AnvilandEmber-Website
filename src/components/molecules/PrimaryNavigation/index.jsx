@@ -28,50 +28,105 @@ const StyledNav = styled.nav`
       color: ${palette('primary', 0)};
     }
   }
+
+  @media screen and (max-width: 640px) {
+    flex-direction: column;
+    height: 180px;
+    a {
+      font-size: 1rem;
+    }
+  }
+`;
+
+const LinkGroup = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0 1rem;
+
+  @media screen and (max-width: 640px) {
+    margin-top: 3rem;
+  }
+`;
+
+const LinkWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0 1rem;
 `;
 
 const StyledLink = styled(Link)`
   font-family: ${font('primary')};
-  width: 150px;
-  text-align: center;
 `;
 
-const ImageWrapper = styled.img`
-  margin: 0.75rem 0 0 ;
-  align-self: center;
-  height: 125px;
+const MainLogoWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 65px;
+
+  @media screen and (max-width: 640px) {
+    margin-top: 0;
+  }
+`;
+
+const LogoWrapper = styled.img`
+  height: 150px;
+  margin: 0.5rem 0 0 0.5rem;
+`;
+
+const LogoFontWrapper = styled.img`
+  margin: 0.25rem 3rem 0 0.5rem; ;
+  height: 65px;
 `;
 
 const PrimaryNavigation = (props) => {
   return (
     <StyledNav {...props}>
-      <StyledLink
-        to='/shop'
-        className={({ isActive }) => (isActive ? 'active' : null)}
-      >
-        Shop
-      </StyledLink>
-      <StyledLink
-        to='/gallery'
-        className={({ isActive }) => (isActive ? 'active' : null)}
-      >
-        Gallery
-      </StyledLink>
       <StyledLink to='/'>
-        <ImageWrapper alt='Logo' src='/images/LogoRondel.png' />
+        <MainLogoWrapper>
+          <LogoWrapper alt='Logo' src='/images/AnvilEmberTabLogo.png' />
+          <LogoFontWrapper alt='Logo' src='/images/AnvilEmberLogoText.png' />
+        </MainLogoWrapper>
       </StyledLink>
-      <StyledLink
-        to='/about'
-        className={({ isActive }) => (isActive ? 'active' : null)}
-      >
-        About
-      </StyledLink>
-      <StyledLink
-        to='/contact'
-        className={({ isActive }) => (isActive ? 'active' : null)}
-      >
-        Contact
-      </StyledLink>
+      <LinkGroup>
+        <LinkWrapper>
+          <StyledLink
+            to='/shop'
+            className={({ isActive }) => (isActive ? 'active' : null)}
+          >
+            Shop
+          </StyledLink>
+        </LinkWrapper>
+        <LinkWrapper>
+          <StyledLink
+            to='/gallery'
+            className={({ isActive }) => (isActive ? 'active' : null)}
+          >
+            Gallery
+          </StyledLink>
+        </LinkWrapper>
+        <LinkWrapper>
+          <StyledLink
+            to='/about'
+            className={({ isActive }) => (isActive ? 'active' : null)}
+          >
+            About
+          </StyledLink>
+        </LinkWrapper>
+        <LinkWrapper>
+          <StyledLink
+            to='/contact'
+            className={({ isActive }) => (isActive ? 'active' : null)}
+          >
+            Contact
+          </StyledLink>
+        </LinkWrapper>
+      </LinkGroup>
     </StyledNav>
   );
 };
