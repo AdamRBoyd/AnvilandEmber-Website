@@ -59,3 +59,10 @@ body {
   font-weight: bold;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'FTY SKORZHEN NCV';
+  src: url('./fonts/FTY SKORZHEN NCV.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}

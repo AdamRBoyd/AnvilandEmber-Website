@@ -68,7 +68,7 @@ const SaleWrapper = styled.div`
   width: 99.4vw;
   height: 25px;
   border: 1px solid ${palette('danger', 1)};
-  padding: 0.3rem 0 0.5rem 0;
+  padding: 0.2rem 0 0.5rem 0;
   font-family: ${font('primary')};
   text-shadow: 1px 1px 3px ${palette('grayscale', 0)};
 `;

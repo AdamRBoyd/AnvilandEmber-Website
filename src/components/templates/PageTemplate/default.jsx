@@ -28,10 +28,13 @@ const Content = styled.main`
 `;
 
 const StyledFooter = styled.footer`
-  margin-top: auto;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-self: center;
+  align-self: center;
+  width: 95%;
   z-index: 999;
 `;
 

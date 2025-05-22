@@ -36,7 +36,7 @@ const SplashLabel = styled.label`
     font-family: ${font('primary')};
   font-size: 3rem;
   font-weight: 400;
-  color: ${palette('grayscale', 7)};
+  color: ${palette('grayscale', 6)};
   text-shadow: 2px 2px 5px black;
   margin: 2rem 0;
   `;
@@ -118,16 +118,16 @@ const AboutLabel = styled.label`
   font-family: ${font('primary')};
   font-size: 3rem;
   font-weight: 400;
-  color: ${palette('grayscale', 7)};
+  color: ${palette('grayscale', 6)};
   text-shadow: 2px 2px 5px black;
 `;
 
 const AboutText = styled.label`
-  font-family: ${font('primary')};
-  font-size: 1.1rem;
+  font-family: ${font('quote')};
+  font-size: 1.3rem;
   font-weight: 400;
   color: ${palette('grayscale', 7)};
-  text-shadow: 2px 2px 4px black;
+  text-shadow: 1px 1px 3px black;
   margin: 1rem 0;
   text-align: center;
   width: 80%;
@@ -141,8 +141,20 @@ const AboutImage = styled.img`
   margin: 0 4rem 0 1rem;
 `;
 
+const LearnMore = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-self: center;
+  width: 160px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 1px 1px 3px black;
+  font-family: ${font('primary')};
+`;
+
 const LowerDividerImg = styled.img`
-  margin-bottom: 3rem;
 `;
 
 const HomePage = () => {
@@ -166,11 +178,11 @@ const HomePage = () => {
         <FeaturedListing>
           {FeaturedListings.listings.map((listing, index) => (
             <Link to={`/shop/all/${listing}`} key={index}>
-            <FeaturedListingImg
-              alt={listing.listing}
-              src={`/images/listings/${listing}/${listing}.1.570xN.jpg`}
-              key={index}
-            />
+              <FeaturedListingImg
+                alt={listing.listing}
+                src={`/images/listings/${listing}/${listing}.1.570xN.jpg`}
+                key={index}
+              />
             </Link>
           ))}
         </FeaturedListing>
@@ -186,7 +198,9 @@ const HomePage = () => {
             </AboutText>
             <AboutText>
               <Link to='/about'>
-                Learn more ›
+                <LearnMore>
+                  Learn more ›
+                </LearnMore>
               </Link>
             </AboutText>
           </AboutSectionText>
