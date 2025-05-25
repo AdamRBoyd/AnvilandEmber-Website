@@ -55,10 +55,6 @@ const LinkWrapper = styled.div`
   margin: 0 1rem;
 `;
 
-const StyledLink = styled(Link)`
-  font-family: ${font('primary')};
-`;
-
 const MainLogoWrapper = styled.div`
   display: flex;
   flex-direction: row;
@@ -95,44 +91,44 @@ const LogoFontWrapper = styled.img`
 const PrimaryNavigation = (props) => {
   return (
     <StyledNav {...props}>
-      <StyledLink to='/'>
+      <Link to='/'>
         <MainLogoWrapper>
           <LogoWrapper alt='Logo' src='/images/AnvilEmberTabLogo.png' />
           <LogoFontWrapper alt='Logo' src='/images/AnvilEmberLogoText.png' />
         </MainLogoWrapper>
-      </StyledLink>
+      </Link>
       <LinkGroup>
         <LinkWrapper>
-          <StyledLink
+          <Link
             to='/shop'
             className={({ isActive }) => (isActive ? 'active' : null)}
           >
             Shop
-          </StyledLink>
+          </Link>
         </LinkWrapper>
         <LinkWrapper>
-          <StyledLink
+          <Link
             to='/gallery'
             className={({ isActive }) => (isActive ? 'active' : null)}
           >
             Gallery
-          </StyledLink>
+          </Link>
         </LinkWrapper>
         <LinkWrapper>
-          <StyledLink
+          <Link
             to='/about'
             className={({ isActive }) => (isActive ? 'active' : null)}
           >
             About
-          </StyledLink>
+          </Link>
         </LinkWrapper>
         <LinkWrapper>
-          <StyledLink
+          <Link
             to='/contact'
             className={({ isActive }) => (isActive ? 'active' : null)}
           >
             Contact
-          </StyledLink>
+          </Link>
         </LinkWrapper>
       </LinkGroup>
     </StyledNav>

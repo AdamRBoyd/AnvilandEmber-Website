@@ -15,7 +15,6 @@ const SubHeading = styled.div`
   justify-content: center;
   align-items: center;
   color: ${palette('grayscale', 5, true)};
-  font-family: ${font('primary')};
   font-size: 1rem;
   font-style: italic;
 `;
@@ -25,7 +24,6 @@ const BodyText = styled.div`
   justify-content: center;
   align-items: center;
   color: ${palette('grayscale', 5, true)};
-  font-family: ${font('primary')};
   font-size: 0.8rem;
 `;
 
@@ -41,7 +39,6 @@ const ItalicFont = styled.div`
   justify-content: center;
   align-items: center;
   color: ${palette('grayscale', 5, true)};
-  font-family: ${font('primary')};
   font-size: 0.8rem;
   font-style: italic;
 `;

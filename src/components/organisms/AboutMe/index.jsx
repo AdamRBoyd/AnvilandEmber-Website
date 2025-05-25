@@ -40,7 +40,6 @@ const RightSideTextBlock = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: ${font('primary')};
   padding: 2rem 1.5rem 1.5rem;
 `;
 
@@ -66,13 +65,11 @@ const StyledIcon = styled(Icon)`
 const StyledLink = styled(Link)`
   color: ${palette('primary', 0)};
   cursor: pointer;
-  font-family: ${font('primary')};
   `;
 
 const InstagramLink = styled(Link)`
   color: ${palette('primary', 0)};
   cursor: pointer;
-  font-family: ${font('primary')};
   font-size: 1.3rem;
   font-weight: 500;
   text-align: center;

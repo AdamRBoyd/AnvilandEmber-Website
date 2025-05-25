@@ -29,7 +29,6 @@ const GalleryWrapper = styled.div`
 `;
 
 const Footnote = styled.div`
-  font-family: ${font('primary')};
   color: ${palette('danger', 0)};
   font-weight: 300;
   line-height: 1.5rem;
@@ -104,7 +103,6 @@ const ShippingCustomOrderText = styled.div`
   position: relative;
   top: .5rem;
   left: 0;
-  font-family: ${font('primary')};
   color: ${palette('danger', 4)};
   background-color: rgba(255, 255, 255, 0.4);
   border: 1px solid ${palette('grayscale', 5)};

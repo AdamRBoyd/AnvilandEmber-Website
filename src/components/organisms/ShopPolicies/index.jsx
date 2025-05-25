@@ -8,16 +8,19 @@ const StyledHeading = styled(Heading)`
 `;
 
 const StyledLabel = styled(Label)`
-  margin-top: 1rem;
+  font-size: 1.5rem;
+  margin-top: 2rem;
   padding-left: 0.5rem;
 `;
 
 const ParagraphWrapper = styled.div`
-  font-family: ${font('primary')};
+  font-family: ${font('secondary')};
   padding: 1rem 1.5rem 0rem;
+  width: 80%;
 `;
 
 const StyledList = styled(List)`
+  font-family: ${font('tertiary')};
   padding-left: 4rem;
 `;
 

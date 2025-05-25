@@ -7,7 +7,6 @@ import { Icon, Link } from '../..';
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
-  font-family: ${font('primary')};
   color: ${palette('grayscale', 0)};
   border: 1px solid ${palette('grayscale', 6)};
   border-radius: 0.5rem;
@@ -23,7 +22,6 @@ const ListingImage = styled.img`
 `;
 
 const StyledLink = styled(Link)`
-  font-family: ${font('primary')};
   font-size: 1.3rem;
   color: ${palette('primary', 0)};
   `;

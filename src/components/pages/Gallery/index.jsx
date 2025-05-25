@@ -55,7 +55,6 @@ const StyledLabel = styled.label`
   ${Styling}
   text-align: center;
   color: ${palette('primary', 0)};
-  font-family: ${font('primary')};
   font-size: 1rem;
   font-weight: 500;
   margin: 0.5rem 1rem;

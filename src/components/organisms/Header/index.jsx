@@ -24,14 +24,12 @@ const NavWrapper = styled.div`
   justify-content: center;
 
   align-items: center;
-  font-family: ${font('primary')};
   background-color: ${palette('grayscale', 0)};
   width: 100%;
 `;
 
 const SaleStyle = css`
   color: ${palette('grayscale', 5)};
-  font-family: ${font('primary')};
   stroke: ${palette('grayscale', 0)};
   font-size: 1rem;
   width: 150px;
@@ -77,7 +75,6 @@ const SaleWrapper = styled.div`
   height: 25px;
   border: 1px solid ${palette('danger', 1)};
   padding: 0.2rem 0 0.5rem 0;
-  font-family: ${font('primary')};
   text-shadow: 1px 1px 3px ${palette('grayscale', 0)};
 `;
 

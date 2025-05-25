@@ -21,7 +21,6 @@ const MainContainer = styled.div`
 `;
 
 const LeftSideTextBlock = styled.div`
-  font-family: ${font('primary')};
   height: fit-content;
   width: 95%;
 
@@ -44,7 +43,6 @@ const LeftParagraph = styled.div`
 const StyledLink = styled(Link)`
   color: ${palette('primary', 0)};
   cursor: pointer;
-  font-family: ${font('primary')};
   `;
 
 const ImageBlock = styled.div`

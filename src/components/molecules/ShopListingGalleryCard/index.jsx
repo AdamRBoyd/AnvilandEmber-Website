@@ -10,7 +10,6 @@ const CARD_WIDTH = '260px';
 const CARD_HEIGHT = '380x';
 
 const MainWrapper = styled.div`
-  font-family: ${font('primary')};
   color: ${palette('grayscale', 0)};
   display: flex;
   flex-direction: column;
@@ -29,7 +28,6 @@ const MainWrapper = styled.div`
 
 const LabelWrapper = styled(Label)`
   color: ${palette('primary', 0)};
-  font-family: ${font('primary')};
   font-size: 0.9rem;
   font-weight: 500;
   line-height: 1.5rem;
@@ -130,7 +128,6 @@ const PriceAndShippingStyles = css`
 const PriceWrapper = styled(Label)`
   ${PriceAndShippingStyles}
   color: ${palette('primary', 0)};
-  font-family: ${font('primary')};
   font-size: 1rem;
 `;
 

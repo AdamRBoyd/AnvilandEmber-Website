@@ -33,7 +33,6 @@ const HeadingBackground = styled.div`
 const HeadingWrapper = styled(Heading)`
   align-self: center;
   color: ${palette('grayscale', 6)};
-  font-family: ${font('primary')};
   text-shadow: 2px 2px 5px black;
   font-size: 2rem;
   display: flex;

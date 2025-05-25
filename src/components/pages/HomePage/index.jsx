@@ -33,7 +33,6 @@ const SplashArea = styled.div`
   `;
 
 const SplashLabel = styled.label`
-  font-family: ${font('primary')};
   font-size: 3rem;
   font-weight: 400;
   color: ${palette('grayscale', 6)};
@@ -68,7 +67,6 @@ const FeaturedSectionWrapper = styled.div`
 `;
 
 const FeaturedLabel = styled.label`
-  font-family: ${font('primary')};
   font-size: 3rem;
   font-weight: 400;
   color: ${palette('grayscale', 2)};
@@ -154,7 +152,6 @@ const AboutSectionText = styled.div`
 `;
 
 const AboutLabel = styled.label`
-  font-family: ${font('primary')};
   font-size: 3rem;
   font-weight: 400;
   color: ${palette('grayscale', 6)};
@@ -201,7 +198,6 @@ const LearnMore = styled.div`
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.1);
   box-shadow: 1px 1px 3px black;
-  font-family: ${font('primary')};
 `;
 
 const LowerDividerImg = styled.img`

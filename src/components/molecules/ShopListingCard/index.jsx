@@ -12,7 +12,6 @@ const MainWrapper = styled.div`
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(2, auto);
-  font-family: ${font('primary')};
   color: ${palette('grayscale', 0)};
   gap: 1rem;
   width: 90%;
@@ -110,7 +109,6 @@ const PriceWrapper = styled.div`
   color: ${palette('primary', 0)};
   display: flex;
   flex-direction: row;
-  font-family: ${font('primary')};
   font-size: 1.4rem;
   font-weight: 500;
   justify-content: center;
@@ -138,7 +136,6 @@ const SaleWrapper = styled.div`
   background-color: ${palette('success', 3)};
   display: flex;
   flex-direction: row;
-  font-family: ${font('primary')};
   font-size: 1.2rem;
   font-weight: 500;
   justify-content: center;
@@ -173,7 +170,6 @@ const SoldOutInfo = styled.div`
 `;
 
 const StyledLink = styled(Link)`
-  font-family: ${font('primary')};
   color: ${palette('primary', 0)};
   `;
 

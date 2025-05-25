@@ -6,7 +6,6 @@ import styled, { css } from 'styled-components';
 const fontSize = ({ level }) => `${0.75 + 1 * (1 / level)}rem`;
 
 const styles = css`
-  font-family: ${font('primary')};
   font-weight: 500;
   font-size: ${fontSize};
   margin: 0;

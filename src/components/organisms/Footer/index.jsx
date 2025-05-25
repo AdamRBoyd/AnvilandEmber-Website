@@ -17,7 +17,6 @@ const Credits = styled.div`
   justify-content: center;
   color: ${palette('grayscale', 5, true)};
   font-size: 0.8rem;
-  font-family: ${font('primary')};
   text-align: right;
   margin: 0 2rem;
   width: 300px;
@@ -45,7 +44,6 @@ const StyledCodeLink = styled(Link)`
 const Socials = styled.div`
   color: ${palette('grayscale', 5, true)};
   font-size: 0.8rem;
-  font-family: ${font('primary')};
   margin-left: 0.5rem;
 `;
 
