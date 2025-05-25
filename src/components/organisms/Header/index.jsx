@@ -36,6 +36,11 @@ const SaleStyle = css`
   font-size: 1rem;
   width: 200px;
   text-align: center;
+
+  @media screen and (max-width: 1024px) {
+    width: 150px;
+    font-size: 0.9rem;
+  }
 `;
 
 const SaleTitle = styled.label`
@@ -47,6 +52,10 @@ const SalePercentage = styled.label`
   ${SaleStyle}
   font-size: 1.5rem;
   font-weight: 600;
+
+  @media screen  and (max-width: 1024px) {
+    font-size: 1.2rem;
+  }
 `;
 
 const SaleDate = styled.label`
@@ -71,6 +80,10 @@ const SaleWrapper = styled.div`
   padding: 0.2rem 0 0.5rem 0;
   font-family: ${font('primary')};
   text-shadow: 1px 1px 3px ${palette('grayscale', 0)};
+
+  @media screen {
+    
+  }
 `;
 
 const SalePlaceholder = styled.div`

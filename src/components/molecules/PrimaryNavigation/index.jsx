@@ -29,9 +29,9 @@ const StyledNav = styled.nav`
     }
   }
 
-  @media screen and (max-width: 640px) {
+  @media screen and (max-width: 1024px) {
     flex-direction: column;
-    height: 180px;
+    height: 130px;
     a {
       font-size: 1rem;
     }
@@ -45,8 +45,8 @@ const LinkGroup = styled.div`
   align-items: center;
   margin: 0 1rem;
 
-  @media screen and (max-width: 640px) {
-    margin-top: 3rem;
+  @media screen and (max-width: 1024px) {
+    margin-top: 1.75rem;
   }
 `;
 
@@ -69,19 +69,30 @@ const MainLogoWrapper = styled.div`
   align-items: center;
   height: 65px;
 
-  @media screen and (max-width: 640px) {
+  @media screen and (max-width: 1024px) {
     margin-top: 0;
+    height: 50px;
   }
 `;
 
 const LogoWrapper = styled.img`
   height: 150px;
   margin: 0.5rem 0 0 0.5rem;
+
+  @media screen and (max-width: 1024px) {
+    height: 100px;
+    margin: 0.5rem 0 0 0.25rem;
+  }
 `;
 
 const LogoFontWrapper = styled.img`
   margin: 0.25rem 3rem 0 0.5rem; ;
   height: 65px;
+
+  @media screen and (max-width: 1024px) {
+    height: 50px;
+    margin: 1rem 1rem 0 0.25rem;
+  }
 `;
 
 const PrimaryNavigation = (props) => {
