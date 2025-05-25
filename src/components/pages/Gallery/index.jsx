@@ -106,6 +106,7 @@ const Gallery = () => {
           </CardWrapper>
         </GalleryWrapper>
       </PageTitleFrame>
+      <Spacer padding={4} />
       <PageTitleFrame title='Fabrication' noBottomRule>
         <ParagraphWrapper>Pictures from the building process.</ParagraphWrapper>
         <GalleryWrapper>

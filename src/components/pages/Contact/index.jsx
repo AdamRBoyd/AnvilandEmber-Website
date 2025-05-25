@@ -34,6 +34,7 @@ const StyledForm = styled.form`
   margin: 1rem 0;
   width: 500px;
   padding: 1rem 3rem 1.5rem;
+  background-color: rgba(255, 255, 255, 0.5);
   box-shadow: 0px 0px 5px 0px ${palette('grayscale', 4)};
 `;
 

@@ -36,10 +36,16 @@ const StyledHeading = styled(Heading)`
 `;
 
 const LeftParagraph = styled.div`
-  font-family: ${font('primary')};
+  font-family: ${font('secondary')};
   margin: 0.5rem 1rem;
   text-align: left;
 `;
+
+const StyledLink = styled(Link)`
+  color: ${palette('primary', 0)};
+  cursor: pointer;
+  font-family: ${font('primary')};
+  `;
 
 const ImageBlock = styled.div`
   display: flex;
@@ -70,7 +76,7 @@ const BenchImage = styled.img`
 const ImageLabel = styled(Label)`
   align-self: center;
   color: ${palette('primary', 0)};
-  font-size: 0.75rem;
+  font-size: 0.85rem;
   font-weight: 500;
   text-align: center;
   width: 90%;
@@ -91,7 +97,7 @@ const MyJewelry = () => {
             contains nickel. This means that the jewelry found here will not
             cause irritation to sensitive skin. If you are allergic to copper,
             my jewelry can be made from 99.9% pure silver instead, please{' '}
-            <Link to='/contact'>contact me</Link> for more information. No
+            <StyledLink to='/contact'>contact me</StyledLink> for more information. No
             plated components are used unless specified in the description.
           </LeftParagraph>
           <LeftParagraph>

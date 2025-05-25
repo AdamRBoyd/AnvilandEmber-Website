@@ -1,4 +1,4 @@
-import { palette } from 'styled-theme';
+import { font, palette } from 'styled-theme';
 import { useLocation } from 'react-router-dom';
 import { useState } from 'react';
 import styled from 'styled-components';
@@ -57,6 +57,7 @@ const Description = styled.footer`
   text-align: center;
   font-size: 1rem;
   color: ${palette('primary', 0)};
+  font-family: ${font('tertiary')};
 `;
 
 const DescriptionLine = styled.p`
@@ -84,7 +85,7 @@ const GalleryImages = () => {
 
   return (
     <>
-      <PageTitleFrame title={title}>
+      <PageTitleFrame title={title} noBottomRule>
         <GalleryWrapper>
           {imagesInfo.images.map((image, index) => (
             <ImageCard key={index}>
@@ -124,7 +125,7 @@ const GalleryImages = () => {
           ))}
         </Description>
       </Modal>
-      <Spacer padding={0.5} />
+      <Spacer padding={2} />
     </>
   );
 };

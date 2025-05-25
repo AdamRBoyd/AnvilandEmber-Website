@@ -36,8 +36,9 @@ theme.reversePalette = reversePalette(theme.palette);
 
 theme.fonts = {
   primary: 'Cinzel, serif',
-  secondary: 'Montserrat, sans-serif',
-  tertiary: 'FTY SKORZHEN NCV, serif',
+  secondary: 'Lora-Regular, serif',
+  tertiary: 'Lora-SemiBold, serif',
+  quaternary: 'Lora-Bold, serif',
   pre: 'Consolas, Liberation Mono, Menlo, Courier, monospace',
   quote: 'Georgia, serif',
 };

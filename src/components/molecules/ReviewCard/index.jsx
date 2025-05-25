@@ -13,7 +13,7 @@ const Wrapper = styled.div`
   border-radius: 0.5rem;
   box-shadow: 0px 0px 5px ${palette('grayscale', 5)};
   padding: 2rem;
-  background-color: ${palette('grayscale', 6)};
+  background-color: rgba(255, 255, 255, 0.4);
 `;
 
 const ListingImage = styled.img`
@@ -21,6 +21,12 @@ const ListingImage = styled.img`
   margin-right: 1rem;
   border-radius: 0.25rem;
 `;
+
+const StyledLink = styled(Link)`
+  font-family: ${font('primary')};
+  font-size: 1.3rem;
+  color: ${palette('primary', 0)};
+  `;
 
 const ListingWrapper = styled.div`
   display: flex;
@@ -60,7 +66,8 @@ const ReviewWrapper = styled.div`
   display: flex;
   flex-direction: column;
   margin-top: 1rem;
-  font-family: ${font('primary')};
+  font-family: ${font('secondary')};
+  font-size: 1rem;
   font-size: 0.9rem;
 `;
 
@@ -100,9 +107,9 @@ const ReviewCard = ({
       <ReviewWrapper>{review}</ReviewWrapper>
       <ListingWrapper>
         <ListingImage src={imageUrl} loading='lazy' />
-        <Link href={listingUrl} target='_blank'>
+        <StyledLink href={listingUrl} target='_blank'>
           {title}
-        </Link>
+        </StyledLink>
       </ListingWrapper>
     </Wrapper>
   );

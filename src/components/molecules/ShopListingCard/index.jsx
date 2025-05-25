@@ -36,6 +36,7 @@ const DescriptionWrapper = styled.div`
 `;
 
 const ParagraphWrapper = styled(Paragraph)`
+  font-family: ${font('secondary')};
   margin: 0.2rem;
 `;
 
@@ -110,7 +111,7 @@ const PriceWrapper = styled.div`
   display: flex;
   flex-direction: row;
   font-family: ${font('primary')};
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: 500;
   justify-content: center;
   line-height: 1.5rem;
@@ -120,8 +121,8 @@ const PriceWrapper = styled.div`
 `;
 
 const VariationWrapper = styled.div`
-  font-size: 0.7rem;
-  margin: 0 0.6rem;
+  font-size: 1.2rem;
+  margin: 0 0.6rem 0 0.2rem;
 `;
 
 const SaleWrapper = styled.div`
@@ -153,16 +154,21 @@ const StyledButton = styled(Button)`
 `;
 
 const SoldOutInfo = styled.div`
-  font-family: ${font('primary')};
+  font-family: ${font('tertiary')};
   color: ${palette('danger', 0)};
   font-weight: 300;
   line-height: 1.5rem;
-  font-size: 0.75rem;
+  font-size: 0.9rem;
   font-style: italic;
   text-transform: uppercase;
   text-align: center;
   width: 90%;
 `;
+
+const StyledLink = styled(Link)`
+  font-family: ${font('primary')};
+  color: ${palette('primary', 0)};
+  `;
 
 const ShopListingCard = ({
   images,
@@ -267,7 +273,7 @@ const ShopListingCard = ({
               Note: Sold listings may be available for custom order
             </SoldOutInfo>
             <SoldOutInfo>
-              <Link to='/contact'> Contact me </Link>
+              <StyledLink to='/contact'> Contact me </StyledLink>
               for more Information
             </SoldOutInfo>
           </>

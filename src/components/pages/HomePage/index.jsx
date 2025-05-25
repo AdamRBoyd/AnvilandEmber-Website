@@ -58,8 +58,8 @@ const FeaturedLabel = styled.label`
   font-family: ${font('primary')};
   font-size: 3rem;
   font-weight: 400;
-  color: ${palette('grayscale', 7)};
-  text-shadow: 2px 2px 5px black;
+  color: ${palette('grayscale', 2)};
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
   margin: 2rem 0;
 `;
 
@@ -123,7 +123,7 @@ const AboutLabel = styled.label`
 `;
 
 const AboutText = styled.label`
-  font-family: ${font('quote')};
+  font-family: ${font('secondary')}; 
   font-size: 1.3rem;
   font-weight: 400;
   color: ${palette('grayscale', 7)};

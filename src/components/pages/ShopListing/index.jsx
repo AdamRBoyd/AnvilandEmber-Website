@@ -25,6 +25,7 @@ const ShopListing = () => {
       <PageTitleFrame
         title={listing?.title || 'Nope!'}
         subtitle={listing?.subtitle}
+        noBottomRule
       >
         <ShopListingCard
           saleOn={SALE_ON}
@@ -33,7 +34,7 @@ const ShopListing = () => {
           {...listing}
         />
       </PageTitleFrame>
-      <Spacer padding={6} />
+      <Spacer padding={2} />
     </>
   );
 };

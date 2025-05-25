@@ -47,8 +47,9 @@ const NavContainer = styled.div`
   align-items: center;
   width: 400px;
   padding: 1rem 0;
-  border-radius: 0.5rem;
-  background-color: ${palette('grayscale', 6)};
+  background-color: rgba(255, 255, 255, 0.4);
+  border: 1px solid ${palette('grayscale', 5)};
+  border-radius: 1rem;
 
   @media (min-width: 875px) {
     width: 85%;
@@ -91,23 +92,35 @@ const SortDropdown = styled(Dropdown)`
   }
 `;
 
-const FreeShippingFlag = styled.div`
+const ShippingCustomOrderText = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   position: relative;
-  top: -1rem;
+  top: .5rem;
+  left: 0;
   font-family: ${font('primary')};
-  color: ${palette('grayscale', 0)};
+  color: ${palette('danger', 4)};
+  background-color: rgba(255, 255, 255, 0.4);
+  border: 1px solid ${palette('grayscale', 5)};
+  border-radius: 1rem;
   font-weight: 500;
-  font-size: 0.9rem;
+  font-size: 1rem;
   line-height: 2rem;
   text-align: center;
-  width: 40%;
+  width: fit-content;
+  padding: 0.5rem 1rem;
   text-transform: uppercase;
   text-align: center;
-  background-color: ${palette('success', 3)};
-  border-bottom-left-radius: 0.5rem;
-  border-bottom-right-radius: 0.5rem;
-  border: 1px solid ${palette('grayscale', 6)};
-  border-top: 1px solid ${palette('grayscale', 4)};
+`;
+
+const FreeShippingText = styled.div`
+  margin-right: 1rem;
+`;
+
+const CustomOrderText = styled.div`
+  margin-left: 1rem;
 `;
 
 const Shop = () => {
@@ -183,7 +196,7 @@ const Shop = () => {
 
   return (
     <>
-      <PageTitleFrame title={'Shop'}>
+      <PageTitleFrame title={'Shop'} >
         <NavContainer>
           <InnerNavigation>
             {showSold ? (
@@ -217,8 +230,11 @@ const Shop = () => {
             />
           </InnerNavigation>
         </NavContainer>
-        <HorizontalRule />
-        <FreeShippingFlag>Free Shipping on orders over $35</FreeShippingFlag>
+        <ShippingCustomOrderText>
+          <FreeShippingText>Free Shipping on Order over $35</FreeShippingText>
+          •
+          <CustomOrderText>Custom Orders Available</CustomOrderText>
+        </ShippingCustomOrderText>
         <Spacer padding={0.5} />
         <GalleryWrapper>
           {listingsData.category.map((listing, index) => (
@@ -236,7 +252,7 @@ const Shop = () => {
             </Link>
           ))}
         </GalleryWrapper>
-        <Spacer padding={0.5} />
+        <Spacer padding={3} />
         <HorizontalRule />
         <Spacer padding={0.5} />
         <Footnote>

@@ -45,7 +45,7 @@ const RightSideTextBlock = styled.div`
 `;
 
 const RightParagraph = styled.div`
-  font-family: ${font('primary')};
+  font-family: ${font('secondary')};
   margin: 0.5rem 1rem;
   text-align: left;
 `;
@@ -62,6 +62,12 @@ const StyledIcon = styled(Icon)`
   color: ${palette('primary', 0)};
   font-size: 1.5rem;
 `;
+
+const StyledLink = styled(Link)`
+  color: ${palette('primary', 0)};
+  cursor: pointer;
+  font-family: ${font('primary')};
+  `;
 
 const InstagramLink = styled(Link)`
   color: ${palette('primary', 0)};
@@ -84,9 +90,9 @@ const AboutMe = () => {
         </RightParagraph>
         <RightParagraph>
           I am the founder of{' '}
-          <Link href={'https://AnvilandEmberMetalworks.etsy.com'} target='_blank'>
+          <StyledLink href={'https://AnvilandEmberMetalworks.etsy.com'} target='_blank'>
             {' Anvil & Ember Metalworks on Etsy'}
-          </Link>
+          </StyledLink>
           , where I sell my handcrafted silver and copper jewelry. I enjoy using my creativity and attention to detail to design and create beautiful and functional pieces of jewelry. From simple and elegant designs to
           more intricate and personalized pieces, I strive to create something that speaks to each individual wearer.
         </RightParagraph>
@@ -97,14 +103,14 @@ const AboutMe = () => {
         </RightParagraph>
         <RightParagraph>
           In the 
-          <Link to='/code'>{' Code '}</Link>
+          <StyledLink to='/code'>{' Code '}</StyledLink>
           section of my website, you will find a link to my
-          <Link
+          <StyledLink
             href={'https://github.com/AdamRBoyd'}
             target='_blank'
           >
             {' GitHub '}
-          </Link>
+          </StyledLink>
           profile, as well as many mini projects that I have developed using various programming languages and tools. I enjoy exploring new
           technologies and creating applications that are both functional and visually appealing.
         </RightParagraph>
@@ -112,7 +118,7 @@ const AboutMe = () => {
           Whether I am creating jewelry or programming, I bring the same level of passion and attention to detail to everything I do. I am always
           looking for new opportunities to grow and learn in both fields, and I am excited to share my work with others. Thank you for visiting my
           portfolio website, and please feel free to
-          <Link to='/contact'>{' contact me'}</Link> if you have any questions
+          <StyledLink to='/contact'>{' contact me'}</StyledLink> if you have any questions
           or if you are interested in working together.
         </RightParagraph>
         <Spacer padding={2} />

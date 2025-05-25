@@ -30,7 +30,7 @@ const MainWrapper = styled.div`
 const LabelWrapper = styled(Label)`
   color: ${palette('primary', 0)};
   font-family: ${font('primary')};
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 500;
   line-height: 1.5rem;
   width: 95%;
