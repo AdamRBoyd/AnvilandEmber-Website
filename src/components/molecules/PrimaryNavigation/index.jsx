@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import { Link } from '../..';
 
 const StyledNav = styled.nav`
-  background-image: url('/images/Divider7.png');
+  background-image: url('/images/NavBackground.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

@@ -83,55 +83,55 @@ const Code = () => {
           href={'https://github.com/phoenix239/adamboyddesigns'}
           target='_blank'
         >
-          <StyledImage src='/images/LandingPageImage.png' alt='Website Code' />
+          <StyledImage src='/images/CodeProjects/WebsiteLogo.jpg' alt='Website Code' />
           <StyledHeading>Site Code - Github </StyledHeading>
         </LinkCard>
         <LinkCard to={'weather'}>
-          <StyledImage src='/images/Weather.jpg' alt='Weather' />
+          <StyledImage src='/images/CodeProjects/Weather.jpg' alt='Weather' />
           <StyledHeading>Weather App</StyledHeading>
         </LinkCard>
         <LinkCard to={'tasklog'}>
-          <StyledImage src='/images/tasklog.jpg' alt='Task Log' />
+          <StyledImage src='/images/CodeProjects/tasklog.jpg' alt='Task Log' />
           <StyledHeading>Task Log</StyledHeading>
         </LinkCard>
         <LinkCard to={'dictionary'}>
-          <StyledImage src='/images/Dictionary.jpg' alt='Dictionary' />
+          <StyledImage src='/images/CodeProjects/Dictionary.jpg' alt='Dictionary' />
           <StyledHeading>Dictionary</StyledHeading>
         </LinkCard>
         <LinkCard to={'tictactoe'}>
-          <StyledImage src='/images/Tic_tac_toe.png' alt='TicTacToe' />
+          <StyledImage src='/images/CodeProjects/Tic_tac_toe.png' alt='TicTacToe' />
           <StyledHeading>Tic-Tac-Toe</StyledHeading>
         </LinkCard>
         <LinkCard to={'todo'}>
-          <StyledImage src='/images/ToDoList.jpg' alt='To Do' />
+          <StyledImage src='/images/CodeProjects/ToDoList.jpg' alt='To Do' />
           <StyledHeading>To Do List</StyledHeading>
         </LinkCard>
         <LinkCard to={'workout'}>
-          <StyledImage src='/images/workout.jpg' alt='Workout' />
+          <StyledImage src='/images/CodeProjects/workout.jpg' alt='Workout' />
           <StyledHeading>Workout Log</StyledHeading>
         </LinkCard>
         <LinkCard to={'gradient'}>
-          <StyledImage src='/images/Gradient.jpg' alt='Gradient Picker' />
+          <StyledImage src='/images/CodeProjects/Gradient.jpg' alt='Gradient Picker' />
           <StyledHeading>Gradient Picker</StyledHeading>
         </LinkCard>
         <LinkCard to={'recipe'}>
-          <StyledImage src='/images/recipes.jpg' alt='Recipe Book Search' />
+          <StyledImage src='/images/CodeProjects/recipes.jpg' alt='Recipe Book Search' />
           <StyledHeading>Recipe Book Search</StyledHeading>
         </LinkCard>
         <LinkCard to={'units'}>
-          <StyledImage src='/images/math.jpg' alt='Unit Converter' />
+          <StyledImage src='/images/CodeProjects/math.jpg' alt='Unit Converter' />
           <StyledHeading>Unit Converter</StyledHeading>
         </LinkCard>
         <LinkCard to={'calculator'}>
-          <StyledImage src='/images/calculator.jpg' alt='Calculator' />
+          <StyledImage src='/images/CodeProjects/calculator.jpg' alt='Calculator' />
           <StyledHeading>Calculator</StyledHeading>
         </LinkCard>
         <LinkCard to={'passwordgen'}>
-          <StyledImage src='/images/passwordGen.png' alt='Password Generator' />
+          <StyledImage src='/images/CodeProjects/passwordGen.png' alt='Password Generator' />
           <StyledHeading>Password Generator</StyledHeading>
         </LinkCard>
         <LinkCard to={'tipcalc'}>
-          <StyledImage src='/images/tipCalc.jpg' alt='Tip Calculator' />
+          <StyledImage src='/images/CodeProjects/tipCalc.jpg' alt='Tip Calculator' />
           <StyledHeading>Tip Calculator</StyledHeading>
         </LinkCard>
       </Wrapper>

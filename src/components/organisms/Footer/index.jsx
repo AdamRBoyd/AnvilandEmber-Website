@@ -55,7 +55,7 @@ const Footer = (props) => {
   return (
     <Wrapper>
       <StyledIGLink
-        href='https://www.instagram.com/adamboyddesigns/'
+        href='https://www.instagram.com/AnvilandEmberMetalworks/'
         target='_blank'
       >
         <StyledIcon name='Instagram' icon='instagram' size={20} />
