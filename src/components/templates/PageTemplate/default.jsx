@@ -9,7 +9,6 @@ const Wrapper = styled.div`
   min-height: 98.1vh;
   box-sizing: border-box;
   background-image: url('/images/LinenBackground.jpg');
-  //min-width: 640px;
 `;
 
 const StyledHeader = styled.header`
