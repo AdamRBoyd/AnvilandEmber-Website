@@ -32,9 +32,6 @@ const StyledNav = styled.nav`
   @media screen and (max-width: 1024px) {
     flex-direction: column;
     height: 130px;
-    a {
-      font-size: 1rem;
-    }
   }
 `;
 
@@ -81,7 +78,7 @@ const LogoWrapper = styled.img`
 
   @media screen and (max-width: 1024px) {
     height: 100px;
-    margin: 0.5rem 0 0 0.25rem;
+    margin: 0.25rem 0 0 0.25rem;
   }
 `;
 

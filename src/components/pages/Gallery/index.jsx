@@ -45,6 +45,10 @@ const StyledImage = styled.img`
   border-radius: 0.25rem;
   height: 250px;
   margin-bottom: 1rem;
+
+  @media screen and (max-width: 1024px) {
+    height: 200px;
+  }
 `;
 
 const StyledLabel = styled.label`

@@ -33,17 +33,30 @@ const SplashArea = styled.div`
   `;
 
 const SplashLabel = styled.label`
-    font-family: ${font('primary')};
+  font-family: ${font('primary')};
   font-size: 3rem;
   font-weight: 400;
   color: ${palette('grayscale', 6)};
   text-shadow: 2px 2px 5px black;
   margin: 2rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+
+  @media screen and (max-width: 1020px) {
+    font-size: 2.5rem;
+    padding: 0 1rem;
+  }
   `;
 
 const LabelFlat = styled.img`
-  width: 100%;
+  width: 225px;
   height: auto;
+
+  @media screen and (max-width: 1020px) {
+    width: 200px;
+    height: auto;
+  }
 `;
 
 const FeaturedSectionWrapper = styled.div`
@@ -61,6 +74,11 @@ const FeaturedLabel = styled.label`
   color: ${palette('grayscale', 2)};
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
   margin: 2rem 0;
+
+  @media screen and (max-width: 1020px) {
+    font-size: 2.5rem;
+    padding: 0 1rem; 
+  }
 `;
 
 const FeaturedListing = styled.div`
@@ -70,6 +88,11 @@ const FeaturedListing = styled.div`
   justify-content: center;
   align-items: center;
   width: 1000px;
+
+  @media screen and (max-width: 1020px) {
+    width: 100%;
+    padding: 0 1rem;    
+  }
 `;
 
 const FeaturedListingImg = styled.img`
@@ -95,6 +118,11 @@ const AboutSectionWrapper = styled.div`
   background-position: center;
   width: 100vw;
   height: 450px;
+
+  @media screen and (max-width: 1020px) {
+    height: auto;
+    padding: 2rem;
+  }
 `;
 
 const AboutSection = styled.div`
@@ -105,6 +133,12 @@ const AboutSection = styled.div`
   width: 960px;
   min-width: 800px;
   height: 450px;
+
+  @media screen and (max-width: 1020px) {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
 `;
 
 const AboutSectionText = styled.div`
@@ -112,6 +146,11 @@ const AboutSectionText = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  @media screen and (max-width: 1020px) {
+    width: 60%;
+    padding: 1rem;
+  }
 `;
 
 const AboutLabel = styled.label`
@@ -120,6 +159,11 @@ const AboutLabel = styled.label`
   font-weight: 400;
   color: ${palette('grayscale', 6)};
   text-shadow: 2px 2px 5px black;
+
+  @media screen and (max-width: 1020px) {
+    font-size: 2.5rem;
+    padding: 0 1rem; 
+  }
 `;
 
 const AboutText = styled.label`
@@ -139,6 +183,12 @@ const AboutImage = styled.img`
   border-radius: 10px;
   box-shadow: 0px 0px 5px black;
   margin: 0 4rem 0 1rem;
+
+  @media screen and (max-width: 1020px) {
+    width: 40%;
+    height: auto;
+    margin: 1rem 0;
+  }
 `;
 
 const LearnMore = styled.div`

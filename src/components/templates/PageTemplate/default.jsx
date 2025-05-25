@@ -24,7 +24,6 @@ const Content = styled.main`
   box-sizing: border-box;
   align-self: center;
   justify-self: center;
-  max-width: 100%;
 `;
 
 const StyledFooter = styled.footer`

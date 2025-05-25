@@ -33,26 +33,30 @@ const Footnote = styled.div`
   color: ${palette('danger', 0)};
   font-weight: 300;
   line-height: 1.5rem;
-  font-size: 0.75rem;
+  font-size: 1rem;
   font-style: italic;
   text-transform: uppercase;
   text-align: center;
   width: 90%;
 `;
 
+const StyledLink = styled(Link)`
+  color: ${palette('primary', 0)};
+  `;
+
 const NavContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 400px;
+  width: 100%;
   padding: 1rem 0;
   background-color: rgba(255, 255, 255, 0.4);
   border: 1px solid ${palette('grayscale', 5)};
   border-radius: 1rem;
 
-  @media (min-width: 875px) {
-    width: 85%;
+  @media screen and (max-width: 1024px) {
+    width: 325px;
   }
 `;
 
@@ -63,7 +67,7 @@ const InnerNavigation = styled.div`
   grid-template-rows: repeat(3, 1fr);
   gap: 1rem;
 
-  @media (min-width: 875px) {
+  @media (min-width: 1024px) {
     grid-template-columns: repeat(3, minmax(0, 1fr));
     grid-template-rows: 1fr;
   }
@@ -74,7 +78,7 @@ const StyledButton = styled(Button)`
   width: 200px;
   padding: 0 0.5rem;
 
-  @media (min-width: 875px) {
+  @media (min-width: 1024px) {
     justify-self: left;
     width: 150px;
   }
@@ -87,7 +91,7 @@ const CategoryDropdown = styled(Dropdown)`
 const SortDropdown = styled(Dropdown)`
   justify-self: center;
 
-  @media (min-width: 875px) {
+  @media (min-width: 1024px) {
     justify-self: right;
   }
 `;
@@ -259,7 +263,7 @@ const Shop = () => {
           Note: Sold listings may be available for custom order
         </Footnote>
         <Footnote>
-          <Link to='/contact'> Contact me </Link>
+          <StyledLink to='/contact'> Contact me </StyledLink>
           for more Information
         </Footnote>
       </PageTitleFrame>

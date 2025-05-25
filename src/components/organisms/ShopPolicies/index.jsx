@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { font } from 'styled-theme';
+import { font, palette } from 'styled-theme';
 
 import { Heading, Label, List, Link } from '../..';
 
@@ -19,6 +19,10 @@ const ParagraphWrapper = styled.div`
 
 const StyledList = styled(List)`
   padding-left: 4rem;
+`;
+
+const StyledLink = styled(Link)`
+  color: ${palette('primary', 0)};
 `;
 
 const ShopPolicies = () => {
@@ -81,7 +85,7 @@ const ShopPolicies = () => {
       </ParagraphWrapper>
       <StyledLabel>Questions about your order?</StyledLabel>
       <ParagraphWrapper>
-        Please <Link to='/contact'>contact me</Link> if you have any problems
+        Please <StyledLink to='/contact'>contact me</StyledLink> if you have any problems
         with your order, I am more than happy to help you. I take pride in my
         work and stand behind it. If you are not satisfied with your jewelry
         piece, you can return it for a full refund (minus the shipping charge).

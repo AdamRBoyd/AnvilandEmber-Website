@@ -34,11 +34,10 @@ const SaleStyle = css`
   font-family: ${font('primary')};
   stroke: ${palette('grayscale', 0)};
   font-size: 1rem;
-  width: 200px;
+  width: 150px;
   text-align: center;
 
   @media screen and (max-width: 1024px) {
-    width: 150px;
     font-size: 0.9rem;
   }
 `;
@@ -54,7 +53,7 @@ const SalePercentage = styled.label`
   font-weight: 600;
 
   @media screen  and (max-width: 1024px) {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
 `;
 
@@ -80,10 +79,6 @@ const SaleWrapper = styled.div`
   padding: 0.2rem 0 0.5rem 0;
   font-family: ${font('primary')};
   text-shadow: 1px 1px 3px ${palette('grayscale', 0)};
-
-  @media screen {
-    
-  }
 `;
 
 const SalePlaceholder = styled.div`

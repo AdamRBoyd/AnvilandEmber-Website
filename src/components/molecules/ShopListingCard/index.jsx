@@ -120,9 +120,16 @@ const PriceWrapper = styled.div`
   text-transform: uppercase;
 `;
 
+const PriceFromWrapper = styled.div`
+  font-size: 1rem;
+  margin: 0 1.6rem 0 0.2rem;
+`;
+
 const VariationWrapper = styled.div`
-  font-size: 1.2rem;
-  margin: 0 0.6rem 0 0.2rem;
+  font-size: 1rem;
+  margin: 0 0.2rem 0 1.6rem;
+
+
 `;
 
 const SaleWrapper = styled.div`
@@ -228,9 +235,9 @@ const ShopListingCard = ({
 
         <Spacer padding={2} />
         <PriceWrapper>
-          <VariationWrapper>
+          <PriceFromWrapper>
             {hasVariations ? 'Price: From' : 'Price:'}
-          </VariationWrapper>
+          </PriceFromWrapper>
           {saleOn ? (
             <>
               <SalePrice>

@@ -47,6 +47,7 @@ const HeadingWrapper = styled(Heading)`
   @media screen and (max-width: 640px) {
     font-size: 1.5rem;
     margin: 3rem 0 2rem;
+    padding: 0 1rem;
   }
 `;
 
@@ -57,7 +58,7 @@ const ContentWrapper = styled.div`
   justify-content: center;
   justify-self: center;
   align-self: center;
-  width: 70%;
+  width: 90%;
   `;
 
 const SubtitleWrapper = styled.label`
