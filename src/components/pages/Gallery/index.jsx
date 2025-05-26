@@ -1,4 +1,4 @@
-import { font, palette } from 'styled-theme';
+import { palette } from 'styled-theme';
 import styled, { css } from 'styled-components';
 
 import { Link, PageTitleFrame, Paragraph, Spacer } from '../..';

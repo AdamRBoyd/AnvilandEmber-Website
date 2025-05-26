@@ -1,4 +1,4 @@
-import { font, palette } from 'styled-theme';
+import { palette } from 'styled-theme';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 

@@ -1,4 +1,4 @@
-import { font, palette } from 'styled-theme';
+import { palette } from 'styled-theme';
 import styled from 'styled-components';
 
 import { Icon, Link } from '../..';

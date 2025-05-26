@@ -1,4 +1,4 @@
-import { font, palette } from 'styled-theme';
+import { palette } from 'styled-theme';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import styled from 'styled-components';
