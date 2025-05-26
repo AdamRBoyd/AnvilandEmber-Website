@@ -2,8 +2,8 @@ import { palette } from 'styled-theme';
 import { useRef, useState } from 'react';
 import styled from 'styled-components';
 
-// import emailjs from '@emailjs/browser';
-// import apiKeys from '../../json/apiKeys.json';
+import emailjs from '@emailjs/browser';
+import apiKeys from '../../../json/apiKeys.json';
 
 import {
   Button,
@@ -85,7 +85,7 @@ const Contact = () => {
   const [submitted, setSubmitted] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const form = useRef();
-  // const { serviceId, templateId, userName } = apiKeys.contact;
+  const { serviceId, templateId, userName } = apiKeys.contact;
 
   const handleFormValidation = (e) => {
     if (
@@ -106,14 +106,14 @@ const Contact = () => {
     openModal();
 
     // NOTE: Uncomment when ready to send emails
-    // emailjs.sendForm(serviceId, templateId, form.current, userName).then(
-    //   (result) => {
-    //     console.log(result.text);
-    //   },
-    //   (error) => {
-    //     console.log(error.text);
-    //   }
-    // );
+    emailjs.sendForm(serviceId, templateId, form.current, userName).then(
+      (result) => {
+        console.log(result.text);
+      },
+      (error) => {
+        console.log(error.text);
+      }
+    );
   };
 
   // handle close modal

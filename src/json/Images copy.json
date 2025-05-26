@@ -1,0 +1,1381 @@
+{
+  "rings": {
+    "title": "Rings",
+    "images": [
+      {
+        "filename": "rings/SpinnerRingHandAm.jpg",
+        "altText": "Wide Spinner Ring Amethyst Side",
+        "description": [
+          "A spinner ring I made as part of a friend's birthday gift.",
+          "Made from sterling silver, copper and jeweler's bronze.",
+          "This side is set with a 2mm amethyst gemstone."
+        ]
+      },
+      {
+        "filename": "rings/SpinnerRingHandRu.jpg",
+        "altText": "Wide Spinner Ring Ruby Side",
+        "description": [
+          "A spinner ring I made as part of a friend's birthday gift.",
+          "Made from sterling silver, copper and jeweler's bronze.",
+          "This side is set with a 2mm ruby gemstone."
+        ]
+      },
+      {
+        "filename": "rings/SpinnerRingBenchAm.jpg",
+        "altText": "Wide Spinner Ring Amethyst Side",
+        "description": [
+          "A spinner ring I made as part of a friend's birthday gift.",
+          "Made from sterling silver, copper and jeweler's bronze.",
+          "This side is set with a 2mm amethyst gemstone."
+        ]
+      },
+      {
+        "filename": "rings/SpinnerRingBenchRu.jpg",
+        "altText": "Wide Spinner Ring Ruby Side",
+        "description": [
+          "A spinner ring I made as part of a friend's birthday gift.",
+          "Made from sterling silver, copper and jeweler's bronze.",
+          "This side is set with a 2mm ruby gemstone."
+        ]
+      },
+      {
+        "filename": "rings/SpinnerRingBagAm.jpg",
+        "altText": "Wide Spinner Ring Amethyst Side",
+        "description": [
+          "A spinner ring I made as part of a friend's birthday gift.",
+          "Made from sterling silver, copper and jeweler's bronze.",
+          "This side is set with a 2mm amethyst gemstone."
+        ]
+      },
+      {
+        "filename": "rings/SpinnerRingBagRu.jpg",
+        "altText": "Wide Spinner Ring Ruby Side",
+        "description": [
+          "A spinner ring I made as part of a friend's birthday gift.",
+          "Made from sterling silver, copper and jeweler's bronze.",
+          "This side is set with a 2mm ruby gemstone."
+        ]
+      },
+      {
+        "filename": "rings/SingleStoneMainNew.jpg",
+        "altText": "Stacking Rings with Single Stone",
+        "description": [
+          "Sterling silver stackable rings with a single stone.",
+          "Can be made with any stone.",
+          "Shown here with amethyst, white sapphire and ruby."
+        ]
+      },
+      {
+        "filename": "rings/SilverStack3Holder.jpg",
+        "altText": "Stacking Rings with Single Stone",
+        "description": [
+          "Sterling silver stackable rings with a single stone.",
+          "Can be made with any stone.",
+          "Shown here with amethyst, white sapphire and ruby."
+        ]
+      },
+      {
+        "filename": "rings/SilverStack3onFinger.jpg",
+        "altText": "Stacking Rings with Single Stone",
+        "description": [
+          "Sterling silver stackable rings with a single stone.",
+          "Can be made with any stone.",
+          "Shown here with amethyst, white sapphire and ruby.",
+          "Can be stacked or worn individually."
+        ]
+      },
+      {
+        "filename": "rings/SilverStack3onFinger2.jpg",
+        "altText": "Stacking Rings with Single Stone",
+        "description": [
+          "Sterling silver stackable rings with a single stone.",
+          "Can be made with any stone.",
+          "Shown here with amethyst, white sapphire and ruby.",
+          "Can be stacked or worn individually."
+        ]
+      },
+      {
+        "filename": "rings/SilverStack3Close.jpg",
+        "altText": "Stacking Rings with Single Stone",
+        "description": [
+          "Sterling silver stackable rings with a single stone.",
+          "Can be made with any stone.",
+          "Shown here with amethyst, white sapphire and ruby."
+        ]
+      },
+      {
+        "filename": "rings/SilverStackAmethyst.jpg",
+        "altText": "Stacking Ring with Single Stone",
+        "description": [
+          "Sterling silver stackable ring with a single stone.",
+          "Can be made with any stone.",
+          "Shown here with amethyst."
+        ]
+      },
+      {
+        "filename": "rings/SilverStackAmethystinBox.jpg",
+        "altText": "Stacking Ring with Single Stone",
+        "description": [
+          "Sterling silver stackable ring with a single stone.",
+          "Can be made with any stone.",
+          "Shown here with amethyst."
+        ]
+      },
+      {
+        "filename": "rings/SilverStackRuby.jpg",
+        "altText": "Stacking Ring with Single Stone",
+        "description": [
+          "Sterling silver stackable ring with a single stone.",
+          "Can be made with any stone.",
+          "Shown here with ruby."
+        ]
+      },
+      {
+        "filename": "rings/SilverStackRubyinBox.jpg",
+        "altText": "Stacking Ring with Single Stone",
+        "description": [
+          "Sterling silver stackable ring with a single stone.",
+          "Can be made with any stone.",
+          "Shown here with ruby."
+        ]
+      },
+      {
+        "filename": "rings/SilverStackSapphire.jpg",
+        "altText": "Stacking Ring with Single Stone",
+        "description": [
+          "Sterling silver stackable ring with a single stone.",
+          "Can be made with any stone.",
+          "Shown here with white sapphire."
+        ]
+      },
+      {
+        "filename": "rings/SilverStackSapphireinBox.jpg",
+        "altText": "Stacking Ring with Single Stone",
+        "description": [
+          "Sterling silver stackable ring with a single stone.",
+          "Can be made with any stone.",
+          "Shown here with white sapphire."
+        ]
+      },
+      {
+        "filename": "rings/BrassWrapDisplay1.jpg",
+        "altText": "Hand Made Jeweler's Bronze Wire Ring",
+        "description": [
+          "Hand bent expandable ring.",
+          "Made from 14 gauge jeweler's bronze wire.",
+          "Can be made from other metals such as silver or copper"
+        ]
+      },
+      {
+        "filename": "rings/BrassWrapDisplay2.jpg",
+        "altText": "Hand Made Jeweler's Bronze Wire Ring",
+        "description": [
+          "Hand bent expandable ring.",
+          "Made from 14 gauge jeweler's bronze wire.",
+          "Can be made from other metals such as silver or copper"
+        ]
+      },
+      {
+        "filename": "rings/BrassWrapDisplay3.jpg",
+        "altText": "Hand Made Jeweler's Bronze Wire Ring",
+        "description": [
+          "Hand bent expandable ring.",
+          "Made from 14 gauge jeweler's bronze wire.",
+          "Can be made from other metals such as silver or copper"
+        ]
+      },
+      {
+        "filename": "rings/BrassWrapHand1.jpg",
+        "altText": "Hand Made Jeweler's Bronze Wire Ring",
+        "description": [
+          "Hand bent expandable ring.",
+          "Made from 14 gauge jeweler's bronze wire.",
+          "Can be made from other metals such as silver or copper"
+        ]
+      },
+      {
+        "filename": "rings/BrassWrapHand2.jpg",
+        "altText": "Hand Made Jeweler's Bronze Wire Ring",
+        "description": [
+          "Hand bent expandable ring.",
+          "Made from 14 gauge jeweler's bronze wire.",
+          "Can be made from other metals such as silver or copper"
+        ]
+      },
+      {
+        "filename": "rings/CatWireBag.jpg",
+        "altText": "Cat Wire Ring",
+        "description": [
+          "Made as part of a friends birthday gift.",
+          "Made from 14 gauge sterling silver wire."
+        ]
+      },
+      {
+        "filename": "rings/CatWireBench1.jpg",
+        "altText": "Cat Wire Ring",
+        "description": [
+          "Made as part of a friends birthday gift.",
+          "Made from 14 gauge sterling silver wire."
+        ]
+      },
+      {
+        "filename": "rings/CatWireBench2.jpg",
+        "altText": "Cat Wire Ring",
+        "description": [
+          "Made as part of a friends birthday gift.",
+          "Made from 14 gauge sterling silver wire."
+        ]
+      },
+      {
+        "filename": "rings/CatWireHand.jpg",
+        "altText": "Cat Wire Ring",
+        "description": [
+          "Made as part of a friends birthday gift.",
+          "Made from 14 gauge sterling silver wire."
+        ]
+      },
+      {
+        "filename": "rings/BandedStackFinger.jpg",
+        "altText": "7 Band Captive Stack Ring",
+        "description": [
+          "Made as part of a friends birthday gift.",
+          "Made from smooth and beaded 16 gauge sterling silver wire.",
+          "Stamped with a feather",
+          "Sold in my shop as 3, 5 and 7 band versions without the feather."
+        ]
+      },
+      {
+        "filename": "rings/BandedStackBag.jpg",
+        "altText": "7 Band Captive Stack Ring",
+        "description": [
+          "Made as part of a friends birthday gift.",
+          "Made from smooth and beaded 16 gauge sterling silver wire.",
+          "Stamped with a feather",
+          "Sold in my shop as 3, 5 and 7 band versions without the feather."
+        ]
+      },
+      {
+        "filename": "rings/DimpleMainNew.jpg",
+        "altText": "Dimpled Stacking Ring",
+        "description": [
+          "Originally made as practice piece for texture",
+          "I liked the texture enough I decided to make a ring",
+          "Made from 12 gauge sterling silver wire."
+        ]
+      },
+      {
+        "filename": "rings/DimpleRingClose1.jpg",
+        "altText": "Dimpled Stacking Ring",
+        "description": [
+          "Originally made as practice piece for texture",
+          "I liked the texture enough I decided to make a ring",
+          "Made from 12 gauge sterling silver wire."
+        ]
+      },
+      {
+        "filename": "rings/DimpleRingClose2.jpg",
+        "altText": "Dimpled Stacking Ring",
+        "description": [
+          "Originally made as practice piece for texture",
+          "I liked the texture enough I decided to make a ring",
+          "Made from 12 gauge sterling silver wire."
+        ]
+      },
+      {
+        "filename": "rings/DimpleRingHand.jpg",
+        "altText": "Dimpled Stacking Ring",
+        "description": [
+          "Originally made as practice piece for texture",
+          "I liked the texture enough I decided to make a ring",
+          "Made from 12 gauge sterling silver wire."
+        ]
+      },
+      {
+        "filename": "rings/MoonRingMain.jpg",
+        "altText": "Moon Stacking Ring",
+        "description": [
+          "Simple stacking ring with a 7mm textured moon.",
+          "Made from sterling silver."
+        ]
+      },
+      {
+        "filename": "rings/MoonRingBox1.jpg",
+        "altText": "Moon Stacking Ring",
+        "description": [
+          "Simple stacking ring with a 7mm textured moon.",
+          "Made from sterling silver."
+        ]
+      },
+      {
+        "filename": "rings/MoonRingBox2.jpg",
+        "altText": "Moon Stacking Ring",
+        "description": [
+          "Simple stacking ring with a 7mm textured moon.",
+          "Made from sterling silver."
+        ]
+      },
+      {
+        "filename": "rings/FloralMain.jpg",
+        "altText": "Floral Ring",
+        "description": ["4mm wide.", "Made from sterling silver."]
+      },
+      {
+        "filename": "rings/FloralClose.jpg",
+        "altText": "Floral Ring",
+        "description": ["4mm wide.", "Made from sterling silver."]
+      },
+      {
+        "filename": "rings/FloralDisplay.jpg",
+        "altText": "Floral Ring",
+        "description": ["4mm wide.", "Made from sterling silver."]
+      },
+      {
+        "filename": "rings/PaisleyMain.jpg",
+        "altText": "Paisley Ring",
+        "description": ["6.4mm wide.", "Made from sterling silver."]
+      },
+      {
+        "filename": "rings/PaisleyDisplay.jpg",
+        "altText": "Paisley Ring",
+        "description": ["6.4mm wide.", "Made from sterling silver."]
+      },
+      {
+        "filename": "rings/PaisleyClose.jpg",
+        "altText": "Paisley Ring",
+        "description": ["6.4mm wide.", "Made from sterling silver."]
+      },
+      {
+        "filename": "rings/TwistMain.jpg",
+        "altText": "Twist Pattern Ring",
+        "description": ["3mm wide.", "Made from sterling silver."]
+      },
+      {
+        "filename": "rings/TwistClose.jpg",
+        "altText": "Twist Pattern Ring",
+        "description": ["3mm wide.", "Made from sterling silver."]
+      },
+      {
+        "filename": "rings/TwistDisplay1.jpg",
+        "altText": "Twist Pattern Ring",
+        "description": ["3mm wide.", "Made from sterling silver."]
+      },
+      {
+        "filename": "rings/TwistDisplay2.jpg",
+        "altText": "Twist Pattern Ring",
+        "description": ["3mm wide.", "Made from sterling silver."]
+      },
+      {
+        "filename": "rings/VineMain.jpg",
+        "altText": "Vine and Leaf Pattern Ring",
+        "description": ["6.2mm wide.", "Made from sterling silver."]
+      },
+      {
+        "filename": "rings/VineClose.jpg",
+        "altText": "Vine and Leaf Pattern Ring",
+        "description": ["6.2mm wide.", "Made from sterling silver."]
+      },
+      {
+        "filename": "rings/VineDisplay.jpg",
+        "altText": "Vine and Leaf Pattern Ring",
+        "description": ["6.2mm wide.", "Made from sterling silver."]
+      },
+      {
+        "filename": "rings/VineDisplayClose.jpg",
+        "altText": "Vine and Leaf Pattern Ring",
+        "description": ["6.2mm wide.", "Made from sterling silver."]
+      },
+      {
+        "filename": "rings/MyRings.jpg",
+        "altText": "My Rings",
+        "description": [
+          "These are my rings.",
+          "Made and worn by me (minus the cat)",
+          "Made from sterling silver."
+        ]
+      },
+      {
+        "filename": "rings/Ringman.jpg",
+        "altText": "Ringman",
+        "description": [
+          "One day I looked at my rings and noticed a smiling guy looking back at me.",
+          "I Photoshopped an extra 'eye' on the middle ring.",
+          "And I present 'Ringman'."
+        ]
+      }
+    ]
+  },
+
+  "pendants": {
+    "title": "Pendants",
+    "images": [
+      {
+        "filename": "pendants/BrokenHeartCindiMain.jpg",
+        "altText": "Custom Sterling Silver Broken Heart Pendant",
+        "description": [
+          "Made by request from a friend.",
+          "Custom wing bail, made to hang from a solid silver collar.",
+          "Made from sterling silver with jeweler's bronze accents."
+        ]
+      },
+      {
+        "filename": "pendants/BrokenHeartSilverHandFront.jpg",
+        "altText": "Sterling Silver Broken Heart Pendant",
+        "description": [
+          "Made from sterling silver with jeweler's bronze accents."
+        ]
+      },
+      {
+        "filename": "pendants/BrokenHeartCopperMain.jpg",
+        "altText": "Copper Broken Heart Pendant",
+        "description": [
+          "The original design of the broken heart pendant.",
+          "Made from copper with sterling silver and jeweler's bronze accents.",
+          "It all starts out so clean and pure... and in the end it is broken, battered and bruised... but still it beats on."
+        ]
+      },
+      {
+        "filename": "pendants/BrokenHeartCopperHand1.jpg",
+        "altText": "Copper Broken Heart Pendant with Gold Chain",
+        "description": [
+          "A custom version with a gold chain for my mother.",
+          "Made from copper with sterling silver and jeweler's bronze accents."
+        ]
+      },
+      {
+        "filename": "pendants/YinYangTogether.png",
+        "altText": "Yin Yang Pendants",
+        "description": [
+          "Two sterling silver pendants with onyx and moonstone cabochons.",
+          "The first one of these I made was purchased by a friend while it was still being made.",
+          "He saw the photos I posted on my instagram and had to have it."
+        ]
+      },
+      {
+        "filename": "pendants/YinYangApart.png",
+        "altText": "Yin Yang Pendants",
+        "description": [
+          "Two sterling silver pendants with onyx and moonstone cabochons.",
+          "The first one of these I made was purchased by a friend while it was still being made.",
+          "He saw the photos I posted on my instagram and had to have it."
+        ]
+      },
+      {
+        "filename": "pendants/MickeyWire.jpg",
+        "altText": "Mickey Mouse Pendant",
+        "description": [
+          "Made for a friend who can't wear anything with nickel in it.",
+          "To be sure I made this from .999 pure silver "
+        ]
+      },
+      {
+        "filename": "pendants/JessieSolarSystemMain.jpg",
+        "altText": "Solar System Pendant",
+        "description": [
+          "Made as a birthday present for a friend.",
+          "Portrays the solar system on the day of her birth.",
+          "Shows the sun in the middle and the other planets orbiting around in their arrangement on that date.",
+          "Made from sterling and .999 pure silver with jeweler's bronze background."
+        ]
+      },
+      {
+        "filename": "pendants/JessieSolarSystemHand1.jpg",
+        "altText": "Solar System Pendant",
+        "description": [
+          "Made as a birthday present for a friend.",
+          "Portrays the solar system on the day of her birth.",
+          "Shows the sun in the middle and the other planets orbiting around in their arrangement on that date.",
+          "Made from sterling and .999 pure silver with jeweler's bronze background."
+        ]
+      },
+      {
+        "filename": "pendants/JessieSolarSystemHand2.jpg",
+        "altText": "Solar System Pendant",
+        "description": [
+          "Made as a birthday present for a friend.",
+          "Portrays the solar system on the day of her birth.",
+          "Made from sterling and .999 pure silver with jeweler's bronze background.",
+          "The end of the chain has a small amethyst bead for weight."
+        ]
+      },
+      {
+        "filename": "pendants/JessieSolarSystemDisplay.jpg",
+        "altText": "Solar System Pendant",
+        "description": [
+          "Made as a birthday present for a friend.",
+          "Portrays the solar system on the day of her birth.",
+          "Shows the sun in the middle and the other planets orbiting around in their arrangement on that date.",
+          "Made from sterling and .999 pure silver with jeweler's bronze background."
+        ]
+      },
+      {
+        "filename": "pendants/JessieSolarSystemBust.jpg",
+        "altText": "Solar System Pendant",
+        "description": [
+          "Made as a birthday present for a friend.",
+          "Portrays the solar system on the day of her birth.",
+          "Shows the sun in the middle and the other planets orbiting around in their arrangement on that date.",
+          "Made from sterling and .999 pure silver with jeweler's bronze background."
+        ]
+      },
+      {
+        "filename": "pendants/JessieSolarSystemBox2.jpg",
+        "altText": "Solar System Pendant",
+        "description": [
+          "Made as a birthday present for a friend.",
+          "Portrays the solar system on the day of her birth.",
+          "Shows the sun in the middle and the other planets orbiting around in their arrangement on that date.",
+          "Made from sterling and .999 pure silver with jeweler's bronze background."
+        ]
+      },
+      {
+        "filename": "pendants/SakuraPendant.jpg",
+        "altText": "Sakura Pendant",
+        "description": [
+          "Made to resemble the delicate sakura or cherry blossom.",
+          "Made from sterling silver and copper."
+        ]
+      },
+      {
+        "filename": "pendants/SakuraPendantMain.jpg",
+        "altText": "Sakura Pendant",
+        "description": [
+          "Made to resemble the delicate sakura or cherry blossom.",
+          "Made from sterling silver and copper."
+        ]
+      },
+      {
+        "filename": "pendants/SakuraPendantSet.jpg",
+        "altText": "Sakura Pendant and Earring Set",
+        "description": [
+          "Made to resemble the delicate sakura or cherry blossom.",
+          "Made from sterling silver and copper."
+        ]
+      },
+      {
+        "filename": "pendants/SakuraSet.jpg",
+        "altText": "Sakura Pendant and Earring Set",
+        "description": [
+          "Made to resemble the delicate sakura or cherry blossom.",
+          "Made from sterling silver and copper."
+        ]
+      },
+      {
+        "filename": "pendants/DoubleHeartAmClose.jpg",
+        "altText": "Double Heart Pendant",
+        "description": [
+          "Made from hand wrapped sterling silver, with two small amethyst beads."
+        ]
+      },
+      {
+        "filename": "pendants/DoubleHeartBothDesk.jpg",
+        "altText": "Double Heart Pendant",
+        "description": [
+          "Made from hand wrapped sterling silver.",
+          "The two versions, one with amethyst beads, the other with red bamboo beads."
+        ]
+      },
+      {
+        "filename": "pendants/DoubleHeartBothHand.jpg",
+        "altText": "Double Heart Pendant",
+        "description": [
+          "Made from hand wrapped sterling silver.",
+          "The two versions, one with amethyst beads, the other with red bamboo beads."
+        ]
+      },
+      {
+        "filename": "pendants/DoubleHeartAm.jpg",
+        "altText": "Double Heart Pendant",
+        "description": [
+          "Made from hand wrapped sterling silver, with two small amethyst beads."
+        ]
+      },
+      {
+        "filename": "pendants/HopeClose.jpg",
+        "altText": "Hope Pendant",
+        "description": [
+          "A simple sterling silver pendant with 'HOPE' hand engraved on the back."
+        ]
+      },
+      {
+        "filename": "pendants/HopeCloseBack.jpg",
+        "altText": "Hope Pendant",
+        "description": [
+          "A simple sterling silver pendant with 'HOPE' hand engraved on the back."
+        ]
+      },
+      {
+        "filename": "pendants/HopeHand1.jpg",
+        "altText": "Hope Pendant",
+        "description": [
+          "A simple sterling silver pendant with 'HOPE' hand engraved on the back."
+        ]
+      },
+      {
+        "filename": "pendants/HopeHand2.jpg",
+        "altText": "Hope Pendant",
+        "description": [
+          "A simple sterling silver pendant with 'HOPE' hand engraved on the back."
+        ]
+      },
+      {
+        "filename": "pendants/ShivaEyeMain.jpg",
+        "altText": "Shiva Eye Pendant",
+        "description": [
+          "A Shiva eye shell that has been shaped into a wide teardrop.",
+          "Hand wrapped in textured copper wire."
+        ]
+      },
+      {
+        "filename": "pendants/ShivaEyeHand.jpg",
+        "altText": "Shiva Eye Pendant",
+        "description": [
+          "A Shiva eye shell that has been shaped into a wide teardrop.",
+          "Hand wrapped in textured copper wire."
+        ]
+      },
+      {
+        "filename": "pendants/ShivaEyeCoin.jpg",
+        "altText": "Shiva Eye Pendant",
+        "description": [
+          "A Shiva eye shell that has been shaped into a wide teardrop.",
+          "Hand wrapped in textured copper wire."
+        ]
+      },
+      {
+        "filename": "pendants/RubyDrop.jpg",
+        "altText": "Ruby Drop Pendant",
+        "description": [
+          "Originally created as a test piece for tube setting practice.",
+          "I ended up liking the piece and made it into a pendant.",
+          "Made from sterling silver with a tube set 2mm ruby."
+        ]
+      },
+      {
+        "filename": "pendants/OpaliteMain.jpg",
+        "altText": "Opalite Caged Pendant",
+        "description": [
+          "I found this opalite ball at a gem show and I knew I needed to make and open pendant to show off its beauty.",
+          "When in the sunlight, the ball almost glows (which deemed hard to capture).",
+          "The cage is made from sterling silver chain."
+        ]
+      },
+      {
+        "filename": "pendants/OpaliteHand.jpg",
+        "altText": "Opalite Caged Pendant",
+        "description": [
+          "I found this opalite ball at a gem show and I knew I needed to make and open pendant to show off its beauty.",
+          "When in the sunlight, the ball almost glows (which deemed hard to capture).",
+          "The cage is made from sterling silver chain."
+        ]
+      },
+      {
+        "filename": "pendants/OpaliteClose.jpg",
+        "altText": "Opalite Caged Pendant",
+        "description": [
+          "I found this opalite ball at a gem show and I knew I needed to make and open pendant to show off its beauty.",
+          "When in the sunlight, the ball almost glows (which deemed hard to capture).",
+          "The cage is made from sterling silver chain."
+        ]
+      }
+    ]
+  },
+
+  "earrings": {
+    "title": "Earrings",
+    "images": [
+      {
+        "filename": "earrings/SakuraBox.jpg",
+        "altText": "Sakura Earrings",
+        "description": [
+          "Made to resemble the delicate sakura or cherry blossom.",
+          "Made from argentium silver and copper."
+        ]
+      },
+      {
+        "filename": "earrings/SakuraEar.jpg",
+        "altText": "Sakura Earrings",
+        "description": [
+          "Made to resemble the delicate sakura or cherry blossom.",
+          "Made from argentium silver and copper."
+        ]
+      },
+      {
+        "filename": "earrings/SakuraSet.jpg",
+        "altText": "Sakura Earrings and Pendant Set",
+        "description": [
+          "Made to resemble the delicate sakura or cherry blossom.",
+          "Made from argentium silver, sterling silver and copper."
+        ]
+      },
+      {
+        "filename": "earrings/HeartDanglesMain.jpg",
+        "altText": "Heart Dangle Earrings",
+        "description": [
+          "Tiny copper hearts covered in red enamel.",
+          "Hung from french earwires and delicate sterling chain",
+          "Made from copper, sterling silver and enamel glass."
+        ]
+      },
+      {
+        "filename": "earrings/HeartDanglesFrontDisplay.jpg",
+        "altText": "Heart Dangle Earrings",
+        "description": [
+          "Tiny copper hearts covered in red enamel.",
+          "Hung from french earwires and delicate sterling chain",
+          "Made from copper, sterling silver and enamel glass."
+        ]
+      },
+      {
+        "filename": "earrings/HeartDanglesRotateDisplay.jpg",
+        "altText": "Heart Dangle Earrings",
+        "description": [
+          "Tiny copper hearts covered in red enamel.",
+          "Hung from french earwires and delicate sterling chain",
+          "Made from copper, sterling silver and enamel glass."
+        ]
+      },
+      {
+        "filename": "earrings/HeartDanglesRotateZoom.jpg",
+        "altText": "Heart Dangle Earrings",
+        "description": [
+          "Tiny copper hearts covered in red enamel.",
+          "Hung from french earwires and delicate sterling chain",
+          "Made from copper, sterling silver and enamel glass."
+        ]
+      },
+      {
+        "filename": "earrings/HeartDanglesPenny.jpg",
+        "altText": "Heart Dangle Earrings",
+        "description": [
+          "Tiny copper hearts covered in red enamel.",
+          "Hung from french earwires and delicate sterling chain",
+          "Made from copper, sterling silver and enamel glass."
+        ]
+      },
+      {
+        "filename": "earrings/HeartDanglesWhite.jpg",
+        "altText": "Heart Dangle Earrings",
+        "description": [
+          "Tiny copper hearts covered in red enamel.",
+          "Hung from french earwires and delicate sterling chain",
+          "Made from copper, sterling silver and enamel glass."
+        ]
+      },
+      {
+        "filename": "earrings/PearlDanglesCoinWhite.jpg",
+        "altText": "Freshwater Pearl and Moonstone Dangle Earrings",
+        "description": [
+          "Freshwater pearl and faceted moonstone bead dangles.",
+          "Strung with hand wrapped sterling silver."
+        ]
+      },
+      {
+        "filename": "earrings/PearlDanglesMain.jpg",
+        "altText": "Freshwater Pearl and Moonstone Dangle Earrings",
+        "description": [
+          "Freshwater pearl and faceted moonstone bead dangles.",
+          "Strung with hand wrapped sterling silver."
+        ]
+      },
+      {
+        "filename": "earrings/AmethystDropMain.jpg",
+        "altText": "Amethyst Drop Earrings",
+        "description": [
+          "Hand wrapped amethyst drop earrings.",
+          "Made from copper wire, with amethyst beads."
+        ]
+      },
+      {
+        "filename": "earrings/AmethystDropWhite.jpg",
+        "altText": "Amethyst Drop Earrings",
+        "description": [
+          "Hand wrapped amethyst drop earrings.",
+          "Made from copper wire, with amethyst beads."
+        ]
+      },
+      {
+        "filename": "earrings/AmethystDropBench.jpg",
+        "altText": "Amethyst Drop Earrings",
+        "description": [
+          "Hand wrapped amethyst drop earrings.",
+          "Made from copper wire, with amethyst beads."
+        ]
+      }
+    ]
+  },
+
+  "other": {
+    "title": "Other",
+    "images": [
+      {
+        "filename": "other/TempleTieBar.png",
+        "altText": "Temple Tie Bar - Front",
+        "description": [
+          "A tie bar I made as a Christmas gift for a friend.",
+          "Made from 925 sterling silver.",
+          "The circular temple portion is 5/8\" in diameter."
+        ]
+      },
+      {
+        "filename": "other/TempleTieBarBack.png",
+        "altText": "Temple Tie Bar - Back",
+        "description": [
+          "A tie bar I made as a Christmas gift for a friend.",
+          "Made from 925 sterling silver.",
+          "Stamped with my personal mark."
+        ]
+      },
+      {
+        "filename": "other/TempleTieBarFace.png",
+        "altText": "Temple Tie Bar - Face",
+        "description": [
+          "A tie bar I made as a Christmas gift for a friend.",
+          "Made from 925 sterling silver.",
+          "The circular temple portion is 5/8\" in diameter."
+        ]
+      },
+      {
+        "filename": "other/TempleTieBarSide.png",
+        "altText": "Temple Tie Bar - Side",
+        "description": [
+          "A tie bar I made as a Christmas gift for a friend.",
+          "Made from 18 gauge 925 sterling silver."
+        ]
+      }
+    ]
+  },
+
+  "fabrication": {
+    "title": "Fabrication",
+    "images": [
+      {
+        "filename": "fabrication/SolderStation.jpg",
+        "altText": "My Soldering Station",
+        "description": [
+          "Its small and has grown since then, but it worked well for me."
+        ]
+      },
+      {
+        "filename": "fabrication/SakuraFab0.jpg",
+        "altText": "Sakura Cherry Blossoms",
+        "description": [
+          "Hand cut TINY sakura blossoms.",
+          "These made my hands and eyes hurt a little.",
+          "I used a glue stick to attach the template to the copper, this allows the template to be easily removed with water."
+        ]
+      },
+      {
+        "filename": "fabrication/SakuraFab1.jpg",
+        "altText": "Sakura Cherry Blossoms",
+        "description": [
+          "Hand cut TINY sakura blossoms.",
+          "These made my hands and eyes hurt a little.",
+          "All cut out and cleaned up."
+        ]
+      },
+      {
+        "filename": "fabrication/SakuraFab2.jpg",
+        "altText": "Sakura Cherry Blossoms",
+        "description": [
+          "Argentium silver wires with a ball melted on the end",
+          "The blossoms have their center hole drilled and radiused.",
+          "I added some tiny divots to make the center of the blossoms look more like cherry blossoms."
+        ]
+      },
+      {
+        "filename": "fabrication/SakuraFab3.jpg",
+        "altText": "Sakura Cherry Blossoms",
+        "description": [
+          "All soldered together, ready for an acid bath to clean them up."
+        ]
+      },
+      {
+        "filename": "fabrication/SakuraFab4.jpg",
+        "altText": "Sakura Cherry Blossoms",
+        "description": [
+          "A delicate bouquet of sakura blossoms.",
+          "Still a little flat though."
+        ]
+      },
+      {
+        "filename": "fabrication/SakuraFab5.jpg",
+        "altText": "Sakura Cherry Blossoms",
+        "description": [
+          "I added some curve to the petals, more like the real thing.",
+          "The wires are trimmed to the proper earring post length."
+        ]
+      },
+      {
+        "filename": "fabrication/SakuraFab6.jpg",
+        "altText": "Sakura Cherry Blossoms",
+        "description": ["All ready for some polish."]
+      },
+      {
+        "filename": "fabrication/SakuraPendantFab0.jpg",
+        "altText": "Sakura Cherry Blossoms",
+        "description": [
+          "I fabricated a branch from sterling silver and attached a few of the blossoms to create a matching pendant."
+        ]
+      },
+      {
+        "filename": "fabrication/SakuraPendantFab1.jpg",
+        "altText": "Sakura Cherry Blossoms",
+        "description": [
+          "All soldered together and fresh out of the acid bath, ready for polish."
+        ]
+      },
+      {
+        "filename": "fabrication/JessieSolar1.jpg",
+        "altText": "Solar System Pendant",
+        "description": [
+          "The original design sketch and a few calculations for the solar system pendant."
+        ]
+      },
+      {
+        "filename": "fabrication/JessieSolar3.jpg",
+        "altText": "Solar System Pendant",
+        "description": [
+          "The backing is soldered and ready to be cut out and cleaned up."
+        ]
+      },
+      {
+        "filename": "fabrication/JessieSolar4.jpg",
+        "altText": "Solar System Pendant",
+        "description": ["I added a few rings, and cut out the crescent moon."]
+      },
+      {
+        "filename": "fabrication/JessieSolar5.jpg",
+        "altText": "Solar System Pendant",
+        "description": [
+          "It doesn't always go smoothly, sometimes you need to fail until you figure it out."
+        ]
+      },
+      {
+        "filename": "fabrication/JessieSolar6.jpg",
+        "altText": "Solar System Pendant",
+        "description": [
+          "Using the laser cutter transfer paper method I prepared the background for acid etching."
+        ]
+      },
+      {
+        "filename": "fabrication/JessieSolar7.jpg",
+        "altText": "Solar System Pendant",
+        "description": [
+          "All etched and ready to be cut out.",
+          "Because of the toner not always sticking, I had to etch about half a dozen of these to get a clean one."
+        ]
+      },
+      {
+        "filename": "fabrication/JessieSolar8.jpg",
+        "altText": "Solar System Pendant",
+        "description": ["All cut out and shiny"]
+      },
+      {
+        "filename": "fabrication/JessieSolar9.jpg",
+        "altText": "Solar System Pendant",
+        "description": [
+          "I drilled the holes for the sun and planets, and started with the sun."
+        ]
+      },
+      {
+        "filename": "fabrication/JessieSolar10.jpg",
+        "altText": "Solar System Pendant",
+        "description": [
+          "Using my pulse arc welder I bonded the sun and planets to the background from the back.",
+          "I couldn't use normal solder methods because the back plate needed to be kept clean and shiny."
+        ]
+      },
+      {
+        "filename": "fabrication/JessieSolar11.jpg",
+        "altText": "Solar System Pendant",
+        "description": ["All attached and ready for some minor cleanup."]
+      },
+      {
+        "filename": "fabrication/JessieSolar12.jpg",
+        "altText": "Solar System Pendant",
+        "description": [
+          "A test fit to get things right on the background piece before attaching it to the pendant."
+        ]
+      },
+      {
+        "filename": "fabrication/JessieSolar13.jpg",
+        "altText": "Solar System Pendant",
+        "description": [
+          "With everything cleaned up and ready to be attached I did a bit of oxidation with liver of sulfur to add depth and texture."
+        ]
+      },
+      {
+        "filename": "fabrication/BrokenHeartFab1.jpg",
+        "altText": "Broken Heart Pendant",
+        "description": [
+          "The original concept sketch for the broken heart pendant."
+        ]
+      },
+      {
+        "filename": "fabrication/BrokenHeartFab2.jpg",
+        "altText": "Broken Heart Pendant",
+        "description": ["Traced out and ready for the saw."]
+      },
+      {
+        "filename": "fabrication/BrokenHeartFab3.jpg",
+        "altText": "Broken Heart Pendant",
+        "description": ["All cut out and ready for texture."]
+      },
+      {
+        "filename": "fabrication/BrokenHeartFab4.jpg",
+        "altText": "Broken Heart Pendant",
+        "description": ["Beat up and stitched back together."]
+      },
+      {
+        "filename": "fabrication/BrokenHeartFab5.jpg",
+        "altText": "Broken Heart Pendant",
+        "description": ["Adding a bit of curvature to the hearts."]
+      },
+      {
+        "filename": "fabrication/JessieBox1.jpg",
+        "altText": "Gift / Storage Box",
+        "description": [
+          "Made from a beautiful piece of walnut",
+          "I taped the top and bottom together to ensure that they are exactly the same length when cut to length."
+        ]
+      },
+      {
+        "filename": "fabrication/JessieBox2.jpg",
+        "altText": "Gift / Storage Box",
+        "description": [
+          "Using a forstner I made three matching compartments in the top and bottom.",
+          "The ring holder posts are made from pieces of walnut dowel."
+        ]
+      },
+      {
+        "filename": "fabrication/JessieBox3.jpg",
+        "altText": "Gift / Storage Box",
+        "description": ["A bit of test fitting with the rings."]
+      },
+      {
+        "filename": "fabrication/JessieBox4.jpg",
+        "altText": "Gift / Storage Box",
+        "description": ["I routed the edges of the box and added the hinges."]
+      },
+      {
+        "filename": "fabrication/JessieBox5.jpg",
+        "altText": "Gift / Storage Box",
+        "description": ["Final test fit to ensure that the box is good to go."]
+      },
+      {
+        "filename": "fabrication/JessieBox6.jpg",
+        "altText": "Gift / Storage Box",
+        "description": [
+          "I added neodymium magnets to the box to hold it closed."
+        ]
+      },
+      {
+        "filename": "fabrication/JessieBox7.jpg",
+        "altText": "Gift / Storage Box",
+        "description": ["A coat of polyurethane to finish things up."]
+      },
+      {
+        "filename": "fabrication/JessieBox8.jpg",
+        "altText": "Gift / Storage Box",
+        "description": ["Felt protectors for the top and bottom surfaces."]
+      },
+      {
+        "filename": "fabrication/JessieBox9.jpg",
+        "altText": "Gift / Storage Box",
+        "description": ["Fabrication done."]
+      },
+      {
+        "filename": "fabrication/JessieBox10.jpg",
+        "altText": "Gift / Storage Box",
+        "description": [
+          "I added felt to the bottom to cover the screw holes and protect any surfaces this is set on."
+        ]
+      },
+      {
+        "filename": "fabrication/JessieBox11.jpg",
+        "altText": "Gift / Storage Box",
+        "description": ["The final product with the rings."]
+      },
+      {
+        "filename": "fabrication/JessieSpinner1.jpg",
+        "altText": "Wide Spinner Ring",
+        "description": [
+          "It all started with a flat piece of sterling silver.",
+          "I added a hammered texture for looks."
+        ]
+      },
+      {
+        "filename": "fabrication/JessieSpinner2.jpg",
+        "altText": "Wide Spinner Ring",
+        "description": [
+          "Bent into a tube and soldered.",
+          "This will be the inner ring."
+        ]
+      },
+      {
+        "filename": "fabrication/JessieSpinner3.jpg",
+        "altText": "Wide Spinner Ring",
+        "description": [
+          "I bent and hammered a copper and a jeweler's bronze spinner."
+        ]
+      },
+      {
+        "filename": "fabrication/JessieSpinner4.jpg",
+        "altText": "Wide Spinner Ring",
+        "description": [
+          "Everything soldered up and fresh out of the acid bath."
+        ]
+      },
+      {
+        "filename": "fabrication/JessieSpinner5.jpg",
+        "altText": "Wide Spinner Ring",
+        "description": ["Time to add the tubes for the gemstones."]
+      },
+      {
+        "filename": "fabrication/JessieSpinner6.jpg",
+        "altText": "Wide Spinner Ring",
+        "description": ["Opposing tubes soldered up."]
+      },
+      {
+        "filename": "fabrication/JessieSpinner7.jpg",
+        "altText": "Wide Spinner Ring",
+        "description": ["A test fit to ensure the ring is good to go."]
+      },
+      {
+        "filename": "fabrication/JessieSpinner8.jpg",
+        "altText": "Wide Spinner Ring",
+        "description": ["Tubes shortened for the gemstones."]
+      },
+      {
+        "filename": "fabrication/JessieSpinner9.jpg",
+        "altText": "Wide Spinner Ring",
+        "description": ["Gemstones set, this is the ruby side"]
+      },
+      {
+        "filename": "fabrication/JessieSpinner10.jpg",
+        "altText": "Wide Spinner Ring",
+        "description": ["Gemstones set, this is the amethyst side"]
+      },
+      {
+        "filename": "fabrication/YinYangFab1.jpg",
+        "altText": "Yin Yang Pendants",
+        "description": ["Sketched out and ready to cut."]
+      },
+      {
+        "filename": "fabrication/YinYangFab2.jpg",
+        "altText": "Yin Yang Pendants",
+        "description": ["Cut out and fitted together."]
+      },
+      {
+        "filename": "fabrication/YinYangFab3.jpg",
+        "altText": "Yin Yang Pendants",
+        "description": ["Soldering on the outer bezel."]
+      },
+      {
+        "filename": "fabrication/YinYangFab4.jpg",
+        "altText": "Yin Yang Pendants",
+        "description": ["Bezels/Bails soldered."]
+      },
+      {
+        "filename": "fabrication/YinYangFab5.jpg",
+        "altText": "Yin Yang Pendants",
+        "description": ["Small bezels soldered in place."]
+      },
+      {
+        "filename": "fabrication/YinYangFab6.jpg",
+        "altText": "Yin Yang Pendants",
+        "description": ["Bezels trimmed and ready for cabochons."]
+      },
+      {
+        "filename": "fabrication/YinYangFab7.jpg",
+        "altText": "Yin Yang Pendants",
+        "description": ["Setting the moonstone cabochon."]
+      },
+      {
+        "filename": "fabrication/YinYangFab8.jpg",
+        "altText": "Yin Yang Pendants",
+        "description": ["One side polished, the other blackened."]
+      },
+      {
+        "filename": "fabrication/HeartDangle1.jpg",
+        "altText": "Heart Dangle Earrings",
+        "description": [
+          "Tiny copper hearts, coated with enameled glass.",
+          "Ready for the dangle chain and earwire."
+        ]
+      },
+      {
+        "filename": "fabrication/HeartDangle2.jpg",
+        "altText": "Heart Dangle Earrings",
+        "description": [
+          "Tiny copper hearts, coated with enameled glass.",
+          "Ready for the dangle chain and earwire."
+        ]
+      },
+      {
+        "filename": "fabrication/CatPendantBuild1.jpg",
+        "altText": "Cat Moon Pendant",
+        "description": [
+          "Sterling silver cat and jeweler's bronze moon cut out and textured."
+        ]
+      },
+      {
+        "filename": "fabrication/CatPendantBuild2.jpg",
+        "altText": "Cat Moon Pendant",
+        "description": ["Test fit of the components."]
+      },
+      {
+        "filename": "fabrication/CatPendantBuild3.jpg",
+        "altText": "Cat Moon Pendant",
+        "description": ["All soldered together and ready for polish."]
+      },
+      {
+        "filename": "fabrication/MickeyFab1.jpg",
+        "altText": "Mickey Mouse Pendant",
+        "description": [".999 Pure silver rings cut to size."]
+      },
+      {
+        "filename": "fabrication/MickeyFab2.jpg",
+        "altText": "Mickey Mouse Pendant",
+        "description": ["Rings for the ears trimmed and fitted to the head."]
+      },
+      {
+        "filename": "fabrication/MickeyFab3.jpg",
+        "altText": "Mickey Mouse Pendant",
+        "description": [
+          "Using solder paste to ensure that the solder joints are nickel free"
+        ]
+      },
+      {
+        "filename": "fabrication/MickeyFab4.jpg",
+        "altText": "Mickey Mouse Pendant",
+        "description": ["Soldered together and ready for the bail ring."]
+      },
+      {
+        "filename": "fabrication/MickeyFab5.jpg",
+        "altText": "Mickey Mouse Pendant",
+        "description": ["All done, ready for the final polish."]
+      },
+      {
+        "filename": "fabrication/SnakeMoonStar2.jpg",
+        "altText": "Snake Moon Star Pendant",
+        "description": ["All the pieces cut, soldered and cleaned up."]
+      },
+      {
+        "filename": "fabrication/SnakeMoonStar1.jpg",
+        "altText": "Snake Moon Star Pendant",
+        "description": ["Setting the tiny 2mm white sapphire stars."]
+      },
+      {
+        "filename": "fabrication/SnakeMoonStar3.jpg",
+        "altText": "Snake Moon Star Pendant",
+        "description": [
+          "Polishing time.",
+          "A dirty job, but this is where you really start to see the beauty of the piece."
+        ]
+      },
+      {
+        "filename": "fabrication/OaklandFab1.jpg",
+        "altText": "Oakland Temple Pendant",
+        "description": [
+          "Paper templates are attached with glue stick, this allows them to be easily removed with water, yet hold during sawing."
+        ]
+      },
+      {
+        "filename": "fabrication/OaklandFab2.jpg",
+        "altText": "Oakland Temple Pendant",
+        "description": ["All cut out, rings soldered and ready for assembly."]
+      },
+      {
+        "filename": "fabrication/OaklandFab3.jpg",
+        "altText": "Oakland Temple Pendant",
+        "description": [
+          "A test fit to ensure the pendant is good to go for soldering."
+        ]
+      },
+      {
+        "filename": "fabrication/OaklandFab4.jpg",
+        "altText": "Oakland Temple Pendant",
+        "description": [
+          "I added a small triangular bail to the pendant.",
+          "Soldered together and ready for the final polish."
+        ]
+      },
+      {
+        "filename": "fabrication/OaklandTieTacFab1.jpg",
+        "altText": "Oakland Temple Tie Bar",
+        "description": ["All the parts cut out and fitted together."]
+      },
+      {
+        "filename": "fabrication/OaklandTieTacFab2.jpg",
+        "altText": "Oakland Temple Tie Bar",
+        "description": ["Tiny Temple.", "This really hurt my fingers"]
+      },
+      {
+        "filename": "fabrication/OaklandTieTacFab3.jpg",
+        "altText": "Oakland Temple Tie Bar",
+        "description": ["Test fit of the components before soldering."]
+      },
+      {
+        "filename": "fabrication/OaklandTieTacFab4.jpg",
+        "altText": "Oakland Temple Tie Bar",
+        "description": [
+          "Main piece soldered together and ready to be attached to the bar."
+        ]
+      },
+      {
+        "filename": "fabrication/OaklandTieTacFab5.jpg",
+        "altText": "Oakland Temple Tie Bar",
+        "description": ["Soldered together and ready for the final polish."]
+      },
+      {
+        "filename": "fabrication/RubyDrop1.jpg",
+        "altText": "Ruby Drop Pendant",
+        "description": ["Textured and cut out."]
+      },
+      {
+        "filename": "fabrication/RubyDrop2.jpg",
+        "altText": "Ruby Drop Pendant",
+        "description": ["Soldered on a tiny tube for a tiny stone."]
+      },
+      {
+        "filename": "fabrication/RubyDrop3.jpg",
+        "altText": "Ruby Drop Pendant",
+        "description": ["Stone set, shiny and polished."]
+      },
+      {
+        "filename": "fabrication/TripleDiscHand.jpg",
+        "altText": "Fabrication Main",
+        "description": ["Textured, polished and connected together."]
+      },
+      {
+        "filename": "fabrication/HopeHand1.jpg",
+        "altText": "Fabrication Main",
+        "description": ["Polishing time."]
+      },
+      {
+        "filename": "fabrication/HopeHand2.jpg",
+        "altText": "Fabrication Main",
+        "description": ["Polishing time."]
+      },
+      {
+        "filename": "fabrication/DimpleRingConst.jpg",
+        "altText": "Fabrication Main",
+        "description": [
+          "Trying out the new ring holder.",
+          "This is where the dimpled ring started"
+        ]
+      },
+      {
+        "filename": "fabrication/HeartMiniStudHeld.jpg",
+        "altText": "Fabrication Main",
+        "description": ["Tiny and shiny"]
+      },
+      {
+        "filename": "fabrication/NoseStudsConst1.jpg",
+        "altText": "Fabrication Main",
+        "description": ["Soldering these together takes a lot of patience."]
+      }
+    ]
+  }
+}

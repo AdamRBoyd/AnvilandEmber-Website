@@ -219,13 +219,14 @@ function App() {
             }
           />
           <Route
-            path='*'
+            path='404'
             element={
               <Suspense fallback={<LoadingPage />}>
                 <NotFoundPage />
               </Suspense>
             }
           />
+          <Route path="*" element={ <Navigate to="/404" replace />} />
         </Routes>
       </PageTemplate>
     </ThemeProvider>

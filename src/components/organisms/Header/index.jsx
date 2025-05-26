@@ -1,14 +1,10 @@
 import { palette } from 'styled-theme';
 import styled, { css } from 'styled-components';
-
+import { useState } from 'react';
 import { PrimaryNavigation } from '../..';
-import {
-  END,
-  SALE_ON,
-  SALE_PERCENTAGE,
-  SALE_TITLE,
-  START,
-} from '../../../constants/SaleDate';
+import { useEffect } from 'react';
+
+// import { SaleDates } from '../../../json';
 
 const LogoSaleWrapper = styled.div`
   display: flex;
@@ -82,7 +78,36 @@ const SalePlaceholder = styled.div`
   background-color: transparent;
 `;
 
+
 const Header = (props) => {
+  const [saleDates, setSaleDates] = useState({});
+  
+  // Fetch SaleDates from JSON file
+  useEffect(() => {
+    const fetchSaleDates = async () => {
+      try {
+        const response = await fetch('/json/SaleDates.json');
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        const data = await response.json();
+        // console.log('Sale Dates:', data);
+        setSaleDates(data);
+      } catch (error) {
+        console.error('Error fetching sale dates:', error);
+      }
+    };
+    
+    fetchSaleDates();
+  }, []);
+  
+  
+  const START = new Date(saleDates.saleStart);
+  const END = new Date(saleDates.saleEnd); 
+  const SALE_ON = new Date() >= START && new Date() <= END;
+  const SALE_PERCENTAGE = saleDates.salePercentage;
+  const SALE_TITLE = saleDates.saleTitle;
+
   return (
     <>
       <NavWrapper>

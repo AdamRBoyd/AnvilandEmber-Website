@@ -91,7 +91,7 @@ const Code = () => {
           <StyledHeading>Weather App</StyledHeading>
         </LinkCard>
         <LinkCard to={'tasklog'}>
-          <StyledImage src='/images/CodeProjects/tasklog.jpg' alt='Task Log' />
+          <StyledImage src='/images/CodeProjects/TaskLog.jpg' alt='Task Log' />
           <StyledHeading>Task Log</StyledHeading>
         </LinkCard>
         <LinkCard to={'dictionary'}>
