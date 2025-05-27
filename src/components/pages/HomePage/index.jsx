@@ -1,9 +1,8 @@
 import styled from 'styled-components';
 import { font, palette } from 'styled-theme';
-
+import { useState, useEffect } from 'react';
 
 import { Link } from '../..';
-import { FeaturedListings } from '../../../json';
 
 const Wrapper = styled.div`
   display: flex;
@@ -204,6 +203,27 @@ const LowerDividerImg = styled.img`
 `;
 
 const HomePage = () => {
+  // Featured listings data from public/json/Featured.json
+  const [FeaturedListings, setFeaturedListings] = useState({});
+
+  useEffect(() => {
+    const fetchFeaturedListings = async () => {
+      try {
+        const response = await fetch('/json/Featured.json');
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        const data = await response.json();
+        setFeaturedListings(data);
+      } catch (error) {
+        console.error('Error fetching featured listings:', error);
+      }
+    };
+
+    fetchFeaturedListings();
+  }, []);
+
+
   return (
     <Wrapper>
       <SplashArea>
@@ -222,7 +242,7 @@ const HomePage = () => {
           Featured Jewelry
         </FeaturedLabel>
         <FeaturedListing>
-          {FeaturedListings.listings.map((listing, index) => (
+          {FeaturedListings?.listings?.map((listing, index) => (
             <Link to={`/shop/all/${listing}`} key={index}>
               <FeaturedListingImg
                 alt={listing.listing}

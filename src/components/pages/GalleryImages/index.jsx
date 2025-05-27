@@ -1,9 +1,8 @@
 import { font, palette } from 'styled-theme';
 import { useLocation } from 'react-router-dom';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import styled from 'styled-components';
 
-import { Images } from '../../../json';
 import { Modal, PageTitleFrame, Spacer } from '../..';
 
 const IMAGE_HEIGHT = '225px';
@@ -67,6 +66,25 @@ const DescriptionLine = styled.p`
 const GalleryImages = () => {
   const { state } = useLocation();
   const { title, section } = state;
+  const [Images, setImages] = useState({});
+
+  useEffect(() => {
+    const fetchImages = async () => {
+      try {
+        const response = await fetch('/json/Images.json');
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        const data = await response.json();
+        setImages(data);
+      } catch (error) {
+        console.error('Error fetching featured listings:', error);
+      }
+    };
+
+    fetchImages();
+  }, []);
+
   const imagesInfo = Images[section];
 
   const [isOpen, setIsOpen] = useState(false);
@@ -87,7 +105,7 @@ const GalleryImages = () => {
     <>
       <PageTitleFrame title={title} noBottomRule>
         <GalleryWrapper>
-          {imagesInfo.images.map((image, index) => (
+          {imagesInfo?.images?.map((image, index) => (
             <ImageCard key={index}>
               <ImageWrapper
                 src={`/images/gallery/${image.filename}`}

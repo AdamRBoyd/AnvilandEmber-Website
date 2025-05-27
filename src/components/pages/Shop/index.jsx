@@ -1,13 +1,10 @@
 import { palette } from 'styled-theme';
 import { useLocation, useNavigate } from 'react-router-dom';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import styled from 'styled-components';
 
 import { SHOP_CATEGORIES } from '../../../constants/ShopCategories';
 import { SORT_OPTIONS } from '../../../constants/SortOptions';
-import { SALE_ON, SALE_PERCENTAGE } from '../../../constants/SaleDate';
-
-import { AllListings } from '../../../json';
 
 import {
   Button,
@@ -126,11 +123,60 @@ const CustomOrderText = styled.div`
 `;
 
 const Shop = () => {
+
   const { state } = useLocation();
 
   const [currentPage, setCurrentPage] = useState(state?.category || 'all');
   const [showSold, setShowSold] = useState(true);
   const navigate = useNavigate();
+
+  const [AllListings, setAllListings] = useState([]); // State to hold all listings
+
+  useEffect(() => {
+  const getAllListings = async () => {
+    try {
+      const response = await fetch('/json/EtsyAll.json');
+      const data = await response.json();
+      setAllListings(data);
+    } catch (error) {
+      console.error('Error fetching listings:', error);
+    }
+  };
+
+  getAllListings();
+}, []);
+
+  useEffect(() => {
+  if (AllListings.length > 0) {
+    setListingsData(listings(currentPage)); // assuming listings() uses AllListings internally
+  }
+  // eslint-disable-next-line
+}, [AllListings, currentPage]);
+
+  const [saleDates, setSaleDates] = useState({});
+  // Fetch SaleDates from JSON file
+  useEffect(() => {
+    const fetchSaleDates = async () => {
+      try {
+        const response = await fetch('/json/SaleDates.json');
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        const data = await response.json();
+        // console.log('Sale Dates:', data);
+        setSaleDates(data);
+      } catch (error) {
+        console.error('Error fetching sale dates:', error);
+      }
+    };
+
+    fetchSaleDates();
+  }, []);
+
+  const START = new Date(saleDates.saleStart);
+  const END = new Date(saleDates.saleEnd);
+  const SALE_ON = new Date() >= START && new Date() <= END;
+  const SALE_PERCENTAGE = saleDates.salePercentage;
 
   function checkCategory(category, entry) {
     return entry.category === category;
@@ -138,10 +184,11 @@ const Shop = () => {
 
   // Load the listings data from the JSON files based on the current category
   const listings = (currentCategory) => {
-    if (currentCategory === 'all') {
+    // If the current category is 'all', return all listings
+    if (currentCategory === 'all' || currentCategory === undefined) {
       return { label: 'All', category: AllListings };
     }
-
+    //If the current category is not 'all', filter the listings by the current category
     currentCategory = currentCategory[0].toUpperCase() + currentCategory.slice(1);
     const allListings = AllListings.filter((entry) =>
       checkCategory(currentCategory, entry)
@@ -239,7 +286,7 @@ const Shop = () => {
         </ShippingCustomOrderText>
         <Spacer padding={0.5} />
         <GalleryWrapper>
-          {listingsData.category.map((listing, index) => (
+          {listingsData?.category?.map((listing, index) => (
             <Link
               to={`/shop/${currentPage}/${listing.listingId}`}
               title={listing.title}
@@ -270,6 +317,7 @@ const Shop = () => {
   );
 };
 
-Shop.propTypes = {};
+Shop.propTypes = {
+};
 
 export default Shop;

@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import { useState, useEffect } from 'react';
 
 import { Footer, Header } from '../..';
 
@@ -42,7 +43,7 @@ const PageTemplate = ({ children, ...props }) => {
       <StyledHeader>
         <Header />
       </StyledHeader>
-      <Content>{children}</Content>
+      <Content >{children}</Content>
       <StyledFooter>
         <Footer />
       </StyledFooter>

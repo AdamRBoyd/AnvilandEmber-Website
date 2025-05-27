@@ -1,6 +1,6 @@
 import styled from 'styled-components';
+import { useEffect, useState } from 'react';
 
-import { Reviews } from '../../../json';
 import {
   AboutMe,
   Heading,
@@ -26,6 +26,26 @@ const ReviewWrapper = styled.div`
 `;
 
 const About = () => {
+  const [Reviews, setReviews] = useState([]);
+  // Fetch Reviews from JSON file
+  useEffect(() => {
+    const fetchReviews = async () => {
+      try {
+        const response = await fetch('/json/Reviews.json');
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        const data = await response.json();
+        // console.log('Reviews:', data);
+        setReviews(data);
+      } catch (error) {
+        console.error('Error fetching reviews:', error);
+      }
+    };
+
+    fetchReviews();
+  }, []);
+
   return (
     <PageTitleFrame title='About Me' noBottomRule>
       <AboutMe />

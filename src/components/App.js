@@ -1,6 +1,7 @@
 import { Navigate, Routes, Route, useLocation } from 'react-router-dom';
-import { useEffect, Suspense, lazy } from 'react';
+import { useEffect, Suspense, lazy, useState } from 'react';
 import { ThemeProvider } from 'styled-components';
+
 
 import PageTemplate from './templates/PageTemplate/default';
 import theme from './themes/default';
