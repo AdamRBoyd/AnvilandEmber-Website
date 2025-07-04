@@ -1,10 +1,12 @@
 import { Navigate, Routes, Route, useLocation } from 'react-router-dom';
-import { useEffect, Suspense, lazy, useState } from 'react';
+import { useEffect, Suspense, lazy } from 'react';
 import { ThemeProvider } from 'styled-components';
 
 
 import PageTemplate from './templates/PageTemplate/default';
 import theme from './themes/default';
+import PageMeta from './organisms/PageMeta';
+import metaMap from './config/metaData';
 
 const About = lazy(() => import('./pages/About'));
 const Code = lazy(() => import('./pages/Code'));
@@ -34,6 +36,10 @@ const Test = lazy(() => import('./pages/Test'));
 function App() {
   const { pathname } = useLocation();
 
+  // Set page meta data based on current path
+  const metaPath = pathname.split('/')[1] || '/';
+  const meta = metaMap["/" + metaPath] || metaMap["/"];
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [pathname]);
@@ -41,6 +47,7 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <PageTemplate>
+      <PageMeta {...meta} />
         <Routes>
           <Route
             path='/'
