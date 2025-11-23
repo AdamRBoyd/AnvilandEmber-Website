@@ -23,8 +23,4 @@ export const SORT_OPTIONS = [
     label: 'Title (Z-A)',
     value: 'titleDESC',
   },
-  {
-    label: 'Category',
-    value: 'STD',
-  },
 ];

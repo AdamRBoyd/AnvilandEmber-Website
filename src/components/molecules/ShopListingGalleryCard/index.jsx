@@ -118,6 +118,19 @@ const NotSoldOutWrapper = styled(Label)`
   border: 1px solid transparent;
 `;
 
+const NewListingWrapper = styled(Label)`
+  font-weight: 700;
+  background-color: dodgerblue;
+  color: ${palette('alert', 1)};
+  padding: .3rem 0.6rem;
+  border-radius: 50%;
+  box-shadow: 5px 5px 5px ${palette('grayscale', 1)};
+  position: absolute;
+  top: 0.5rem;
+  right: 0.7rem;
+  text-transform: uppercase;
+`;
+
 const PriceAndShippingStyles = css`
   display: flex;
   flex-direction: row;
@@ -181,6 +194,8 @@ const ShopListingGalleryCard = ({
   title,
   price,
   hasVariations,
+  creationDate,
+  newListingCutoff,
   saleOn,
   salePercentage,
   state,
@@ -218,7 +233,11 @@ const ShopListingGalleryCard = ({
                 <SoldOutLabel>{' • '}</SoldOutLabel>
               </SoldOutWrapper>
             ) : (
-              <NotSoldOutWrapper>Available</NotSoldOutWrapper>
+              <NotSoldOutWrapper>
+                {creationDate >= newListingCutoff && (
+                  <NewListingWrapper>New</NewListingWrapper>
+                )}
+              </NotSoldOutWrapper>
             )}
           </ImageOverlay>
           <Spacer padding={0.5} />
@@ -259,6 +278,8 @@ ShopListingGalleryCard.propTypes = {
   state: PropTypes.string,
   quantity: PropTypes.number,
   listingId: PropTypes.number,
+  newListingCutoff: PropTypes.number,
+  creationDate: PropTypes.number,
 };
 
 export default ShopListingGalleryCard;

@@ -71,7 +71,7 @@ const InnerNavigation = styled.div`
 
 const StyledButton = styled(Button)`
   justify-self: center;
-  width: 200px;
+  width: 300px;
   padding: 0 0.5rem;
 
   @media (min-width: 1024px) {
@@ -127,7 +127,7 @@ const Shop = () => {
   const { state } = useLocation();
 
   const [currentPage, setCurrentPage] = useState(state?.category || 'all');
-  const [showSold, setShowSold] = useState(true);
+  const [showSold, setShowSold] = useState(false);
   const navigate = useNavigate();
 
   const [AllListings, setAllListings] = useState([]); // State to hold all listings
@@ -177,6 +177,7 @@ const Shop = () => {
   const END = new Date(saleDates.saleEnd);
   const SALE_ON = new Date() >= START && new Date() <= END;
   const SALE_PERCENTAGE = saleDates.salePercentage;
+  const NEW_LISTING_CUTOFF = Math.floor(new Date().setMonth(new Date().getMonth() - 6)/1000); // Listings added within the last 6 months
 
   function checkCategory(category, entry) {
     return entry.category === category;
@@ -221,7 +222,7 @@ const Shop = () => {
       case 'dateDESC':
         return list.category.sort((a, b) => a.creationDate - b.creationDate);
       default:
-        return list.category.sort((a, b) => a.index - b.index);
+        return list.category.sort((a, b) => b.creationDate - a.creationDate);
     }
   };
 
@@ -230,6 +231,7 @@ const Shop = () => {
       label: listingsData?.label,
       category: sortListings(e.target.value, listingsData),
     });
+    console.log(listingsData);
   };
 
   const handleFilterChange = (e) => {
@@ -251,18 +253,18 @@ const Shop = () => {
             {showSold ? (
               <StyledButton
                 onClick={() => setShowSold(false)}
-                variant='primary'
+                variant='ghost'
                 buttonHeight={1.75}
               >
-                Hide Sold Out
+                Hide Sold Items
               </StyledButton>
             ) : (
               <StyledButton
                 onClick={() => setShowSold(true)}
-                variant='ghost'
+                variant='primary'
                 buttonHeight={1.75}
               >
-                Show Sold Out
+                Show Sold Items
               </StyledButton>
             )}
             <CategoryDropdown
@@ -296,6 +298,7 @@ const Shop = () => {
                 showSold={showSold}
                 saleOn={SALE_ON}
                 salePercentage={SALE_PERCENTAGE}
+                newListingCutoff={NEW_LISTING_CUTOFF}
                 {...listing}
               />
             </Link>

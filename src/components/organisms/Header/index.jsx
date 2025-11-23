@@ -101,7 +101,8 @@ const Header = (props) => {
 
   const START = new Date(saleDates.saleStart);
   const END = new Date(saleDates.saleEnd);
-  const SALE_ON = new Date() >= START && new Date() <= END;
+  const SALE_ADVERT = new Date(saleDates.advertStart);
+  const SALE_ON = new Date() >= SALE_ADVERT && new Date() <= END;
   const SALE_PERCENTAGE = saleDates.salePercentage;
   const SALE_TITLE = saleDates.saleTitle;
 

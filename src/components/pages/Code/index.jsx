@@ -80,7 +80,7 @@ const Code = () => {
       <Wrapper>
         <Spacer padding={0.5} />
         <LinkCard
-          href={'https://github.com/phoenix239/adamboyddesigns'}
+          href={'https://github.com/AdamRBoyd/AnvilandEmber-Website'}
           target='_blank'
         >
           <StyledImage src='/images/CodeProjects/WebsiteLogo.jpg' alt='Website Code' />
