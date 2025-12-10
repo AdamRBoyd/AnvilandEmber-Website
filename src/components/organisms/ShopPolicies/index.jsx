@@ -3,6 +3,13 @@ import { font, palette } from 'styled-theme';
 
 import { Heading, Label, List, Link } from '../..';
 
+const PoliciesWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  padding-bottom: 2rem;
+`;
+
 const StyledHeading = styled(Heading)`
   align-self: center;
 `;
@@ -10,18 +17,30 @@ const StyledHeading = styled(Heading)`
 const StyledLabel = styled(Label)`
   font-size: 1.5rem;
   margin-top: 2rem;
-  padding-left: 0.5rem;
+  align-self: center;
+
+  @media screen  and (max-width: 600px) {
+    font-size: 1.25rem;
+  }
 `;
 
 const ParagraphWrapper = styled.div`
   font-family: ${font('secondary')};
   padding: 1rem 1.5rem 0rem;
   width: 80%;
+  align-self: center;
 `;
 
 const StyledList = styled(List)`
   font-family: ${font('tertiary')};
   padding-left: 4rem;
+  width: 70%;
+  align-self: center;
+  text-align: left;
+
+  @media screen and (max-width: 600px) {
+    width: 85%;
+  }
 `;
 
 const StyledLink = styled(Link)`
@@ -30,7 +49,7 @@ const StyledLink = styled(Link)`
 
 const ShopPolicies = () => {
   return (
-    <>
+    <PoliciesWrapper>
       <StyledHeading>Shop policies</StyledHeading>
       <StyledLabel>Shipping Processing time</StyledLabel>
       <ParagraphWrapper>
@@ -93,7 +112,7 @@ const ShopPolicies = () => {
         work and stand behind it. If you are not satisfied with your jewelry
         piece, you can return it for a full refund (minus the shipping charge).
       </ParagraphWrapper>
-    </>
+    </PoliciesWrapper>
   );
 };
 

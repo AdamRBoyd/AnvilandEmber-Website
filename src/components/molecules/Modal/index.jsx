@@ -67,21 +67,17 @@ const Wrapper = styled.div`
   height: 100%;
 `;
 
-const Header = styled.header`
-  display: flex;
-  align-items: center;
-  padding: 1rem;
-  > *:first-child {
-    flex: 1;
-  }
-`;
-
 const StyledHeading = styled(Heading)`
-  margin: 0 1rem 0 0;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
   color: ${palette('primary', 0)};
+  padding: 0.5rem 0;
+  text-align: center;
+
+  @media screen and (max-width: 640px) {
+    font-size: 1rem;
+  }
 `;
 
 const Content = styled.div`
@@ -117,11 +113,9 @@ const Modal = ({
     >
       <Wrapper>
         {hasHeader && (
-          <Header>
-            <StyledHeading level={2} reverse={reverse}>
+          <StyledHeading level={2} reverse={reverse}>
               {title}
-            </StyledHeading>
-          </Header>
+          </StyledHeading>
         )}
         <Content>{children}</Content>
       </Wrapper>

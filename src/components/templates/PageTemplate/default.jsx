@@ -32,7 +32,7 @@ const StyledFooter = styled.footer`
   align-items: center;
   justify-self: center;
   align-self: center;
-  width: 95%;
+  width: 100%;
   z-index: 999;
 `;
 

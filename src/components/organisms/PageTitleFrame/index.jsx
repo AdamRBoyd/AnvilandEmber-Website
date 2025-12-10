@@ -28,6 +28,10 @@ const HeadingBackground = styled.div`
     width: 100%;
     height: 150px;
     margin-bottom: 1rem;
+
+    @media screen and (max-width: 640px) {
+      height: 80px;
+    }
     `;
 
 const HeadingWrapper = styled(Heading)`
@@ -44,8 +48,8 @@ const HeadingWrapper = styled(Heading)`
   text-transform: uppercase;
 
   @media screen and (max-width: 640px) {
-    font-size: 1.5rem;
-    margin: 3rem 0 2rem;
+    font-size: 1.15rem;
+    margin: 2rem 0 2rem;
     padding: 0 1rem;
   }
 `;

@@ -8,6 +8,10 @@ const IMAGE_HEIGHT = '240px';
 const IMAGE_WIDTH = '240px';
 const CARD_WIDTH = '260px';
 const CARD_HEIGHT = '380x';
+const MOBILE_IMAGE_HEIGHT = '140px';
+const MOBILE_IMAGE_WIDTH = '140px';
+const MOBILE_CARD_WIDTH = '150px';
+const MOBILE_CARD_HEIGHT = '250px';
 
 const MainWrapper = styled.div`
   color: ${palette('grayscale', 0)};
@@ -20,9 +24,16 @@ const MainWrapper = styled.div`
   width: ${CARD_WIDTH};
   height: ${CARD_HEIGHT};
   padding: 1rem 0.3rem;
-
+  
   &:hover {
     box-shadow: 0px 0px 10px ${palette('grayscale', 4)};
+  }
+  
+  @media screen and (max-width: 640px) {
+    width: ${MOBILE_CARD_WIDTH};
+    height: ${MOBILE_CARD_HEIGHT};
+    padding: 0 0.2rem;
+    margin: 0.5rem 0;
   }
 `;
 
@@ -35,6 +46,10 @@ const LabelWrapper = styled(Label)`
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
+
+  @media screen and (max-width: 640px) {
+    font-size: 0.8rem; 
+  }
 `;
 
 const ListingImage = styled.img`
@@ -46,6 +61,11 @@ const ListingImage = styled.img`
 
   &:hover {
     transform: scale(1.25);
+  }
+
+  @media screen and (max-width: 640px) {
+    width: ${MOBILE_IMAGE_WIDTH};
+    height: ${MOBILE_IMAGE_HEIGHT};
   }
 `;
 
@@ -62,6 +82,11 @@ const ImageOverlay = styled.div`
   &:hover .details {
     opacity: 1;
     height: 22%;
+  }
+
+  @media screen and (max-width: 640px) {
+    width: ${MOBILE_IMAGE_WIDTH};
+    height: ${MOBILE_IMAGE_HEIGHT};
   }
 `;
 
@@ -90,6 +115,10 @@ const SoldOutStatusStyling = css`
   padding: 0.3rem 0 0.2rem;
   border-radius: 0.3rem 0.3rem 0 0;
   opacity: 0.75;
+
+  @media screen and (max-width: 640px) {
+    padding: 0.15rem 0 0; 
+  }
 `;
 
 const SoldOutWrapper = styled.div`
@@ -105,10 +134,19 @@ const SoldOutLabel = styled(Label)`
   text-shadow: 0px 0px 5px ${palette('grayscale', 1)};
   text-transform: uppercase;
   margin: 0 0.2rem;
+
+  @media screen and (max-width: 640px) {
+    font-size: 0.6rem; 
+    margin: 0 0.1rem;   
+  }
 `;
 
 const SoldOutNote = styled(SoldOutLabel)`
   font-size: 0.55rem;
+
+  @media screen and (max-width: 640px) {
+    font-size: 0.4rem;    
+  }
 `;
 
 const NotSoldOutWrapper = styled(Label)`
@@ -142,6 +180,7 @@ const PriceWrapper = styled(Label)`
   ${PriceAndShippingStyles}
   color: ${palette('primary', 0)};
   font-size: 1rem;
+
 `;
 
 const PriceAndTitle = styled.div`
@@ -152,7 +191,12 @@ const PriceAndTitle = styled.div`
   width: 85%;
   border-bottom: 1px solid ${palette('grayscale', 4)};
   border-top: 1px solid ${palette('grayscale', 4)};
-  padding: 0.5rem 0 0 0.7rem; ;
+  padding: 0.5rem 0 0 0.7rem;
+
+  @media screen and (max-width: 640px) {
+    width: 80%;
+    padding: 0 0 -1rem 0; 
+  }
 `;
 
 const SalePriceWrapper = styled.div`
@@ -163,8 +207,14 @@ const SalePriceWrapper = styled.div`
 `;
 
 const SalePercentWrapper = styled.div`
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: ${palette('grayscale', 3)};
+  margin: 0.2rem 0 .7rem;
+  color: ${palette('danger', 4)};
+
+  @media screen and (max-width: 640px) {
+    font-size: 0.8rem; 
+  }
 `;
 
 const VariationsWrapper = styled.div`
@@ -244,14 +294,16 @@ const ShopListingGalleryCard = ({
           <PriceAndTitle>
             <LabelWrapper>{title}</LabelWrapper>
             {saleOn ? (
-              <PriceWrapper>
-                {hasVariations && <VariationsWrapper>From</VariationsWrapper>}
-                {`$${price.amount - price.amount * (salePercentage / 100)}`}
-                <SalePriceWrapper>{`$${price.amount}`}</SalePriceWrapper>
+              <>
+                <PriceWrapper>
+                  {hasVariations && <VariationsWrapper>From</VariationsWrapper>}
+                  {`$${price.amount - price.amount * (salePercentage / 100)}`}
+                  <SalePriceWrapper>{`$${price.amount}`}</SalePriceWrapper>
+                </PriceWrapper>
                 <SalePercentWrapper>
                   {`(${salePercentage}% off)`}
                 </SalePercentWrapper>
-              </PriceWrapper>
+              </>
             ) : (
               <PriceWrapper>
                 {hasVariations && <VariationsWrapper>From</VariationsWrapper>}

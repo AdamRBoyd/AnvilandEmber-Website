@@ -23,15 +23,15 @@ const MainContainer = styled.div`
 
 const ProfileImage = styled.img`
   border-radius: 50%;
-  width: 50%;
+  width: 70%;
   align-self: center;
   justify-self: center;
   object-fit: cover;
-  margin: 2rem 0 1rem;
+  margin: 2rem 0 1rem 0;
 
-  @media (min-width: 800px) {
-    width: 95%;
-    margin: 0 0 0 1rem;
+  @media (max-width: 600px) {
+    width: 60%;
+    margin: 1rem 0 -0.5rem 0;
   }
 `;
 
@@ -54,12 +54,13 @@ const InstagramBlock = styled.div`
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 0.7rem;
+  gap: 1rem;
+  text-align: center;
 `;
 
 const StyledIcon = styled(Icon)`
   color: ${palette('primary', 0)};
-  font-size: 1.5rem;
+  font-size: 1cap;
 `;
 
 const StyledLink = styled(Link)`
@@ -75,6 +76,10 @@ const InstagramLink = styled(Link)`
   text-align: center;
   text-justify: center;
   margin-top: 1rem;
+
+   @media screen  and (max-width: 600px) {
+    font-size: 1.1rem;
+  }
 `;
 
 const AboutMe = () => {
@@ -124,8 +129,8 @@ const AboutMe = () => {
           target='_blank'
         >
           <InstagramBlock>
-            Follow me on Instagram!
             <StyledIcon name='instagram' icon='instagram' size={25} />
+            Follow me on Instagram!
           </InstagramBlock>
         </InstagramLink>
       </RightSideTextBlock>

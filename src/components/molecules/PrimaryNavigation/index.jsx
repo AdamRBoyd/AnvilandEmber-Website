@@ -23,7 +23,6 @@ const StyledNav = styled.nav`
     font-weight: 300;
     color: ${palette('grayscale', 5)};
     text-shadow: 2px 2px 5px ${palette('grayscale', 0)};
-    font-size: 1.3rem;
     &.active {
       color: ${palette('primary', 0)};
     }
@@ -41,18 +40,21 @@ const LinkGroup = styled.div`
   justify-content: center;
   align-items: center;
   margin: 0 1rem;
+  width: auto;
 
   @media screen and (max-width: 1024px) {
-    margin-top: 1.75rem;
+    margin: 1.75rem 0 0;
   }
 `;
 
-const LinkWrapper = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+const StyledLink = styled(Link)`
   margin: 0 1rem;
+  font-size: 1.3rem;
+
+  @media screen and (max-width: 500px) {
+    margin: 0 0.5rem;
+    font-size: 1.1rem;
+  }
 `;
 
 const MainLogoWrapper = styled.div`
@@ -98,38 +100,30 @@ const PrimaryNavigation = (props) => {
         </MainLogoWrapper>
       </Link>
       <LinkGroup>
-        <LinkWrapper>
-          <Link
-            to='/shop'
-            className={({ isActive }) => (isActive ? 'active' : null)}
-          >
-            Shop
-          </Link>
-        </LinkWrapper>
-        <LinkWrapper>
-          <Link
-            to='/gallery'
-            className={({ isActive }) => (isActive ? 'active' : null)}
-          >
-            Gallery
-          </Link>
-        </LinkWrapper>
-        <LinkWrapper>
-          <Link
-            to='/about'
-            className={({ isActive }) => (isActive ? 'active' : null)}
-          >
-            About
-          </Link>
-        </LinkWrapper>
-        <LinkWrapper>
-          <Link
-            to='/contact'
-            className={({ isActive }) => (isActive ? 'active' : null)}
-          >
-            Contact
-          </Link>
-        </LinkWrapper>
+        <StyledLink
+          to='/shop'
+          className={({ isActive }) => (isActive ? 'active' : null)}
+        >
+          Shop
+        </StyledLink>
+        <StyledLink
+          to='/gallery'
+          className={({ isActive }) => (isActive ? 'active' : null)}
+        >
+          Gallery
+        </StyledLink>
+        <StyledLink
+          to='/about'
+          className={({ isActive }) => (isActive ? 'active' : null)}
+        >
+          About
+        </StyledLink>
+        <StyledLink
+          to='/contact'
+          className={({ isActive }) => (isActive ? 'active' : null)}
+        >
+          Contact
+        </StyledLink>
       </LinkGroup>
     </StyledNav>
   );

@@ -29,7 +29,8 @@ const SaleStyle = css`
   text-align: center;
 
   @media screen and (max-width: 1024px) {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
+    width: 115px;
   }
 `;
 
@@ -44,7 +45,7 @@ const SalePercentage = styled.label`
   font-weight: 600;
 
   @media screen  and (max-width: 1024px) {
-    font-size: 1.4rem;
+    font-size: 1rem;
   }
 `;
 
@@ -69,6 +70,10 @@ const SaleWrapper = styled.div`
   border: 1px solid ${palette('danger', 1)};
   padding: 0.2rem 0 0.5rem 0;
   text-shadow: 1px 1px 3px ${palette('grayscale', 0)};
+
+   @media screen  and (max-width: 1024px) {
+    padding: 0.25rem 0 0.4rem 0;
+  }
 `;
 
 const SalePlaceholder = styled.div`

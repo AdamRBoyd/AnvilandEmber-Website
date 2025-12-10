@@ -7,9 +7,14 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 0.6rem;
-  width: 95%;
+  padding: 0.6rem 0;
+  width: 85%;
   align-items: center;
+
+   @media screen  and (max-width: 1024px) {
+    width: 95%;
+    padding-left: 1.35rem;
+  }
 `;
 
 const Credits = styled.div`
@@ -39,6 +44,7 @@ const StyledCodeLink = styled(Link)`
   align-items: center;
   width: 300px;
   text-shadow: 1px 1px 1px black;
+  text-align: center;
 `;
 
 const Socials = styled.div`

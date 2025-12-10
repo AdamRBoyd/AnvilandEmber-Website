@@ -50,7 +50,7 @@ const ImageBlock = styled.div`
   flex-direction: column;
   align-self: center;
   justify-self: center;
-  padding: 2rem 1rem 1.5rem 0;
+  padding: 2rem 1rem 1rem;
 
   @media (min-width: 800px) {
     padding: 0 0 0 1rem;
@@ -78,7 +78,6 @@ const ImageLabel = styled(Label)`
   font-weight: 500;
   text-align: center;
   width: 90%;
-  margin: 0 0 -0.7rem 0;
 `;
 
 const MyJewelry = () => {
@@ -115,9 +114,7 @@ const MyJewelry = () => {
         <ImageBlock>
           <BenchImage alt='Bench' src='/images/Bench.jpg' loading='lazy' />
           <ImageLabel>
-            Sandwiched between the mustard and the freezer,
-          </ImageLabel>
-          <ImageLabel>it may not look like much, but it works.</ImageLabel>
+            Sandwiched between the mustard and the freezer, it may not look like much, but it works.</ImageLabel>
         </ImageBlock>
       </MainContainer>
     </>

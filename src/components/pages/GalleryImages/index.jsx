@@ -7,6 +7,8 @@ import { Modal, PageTitleFrame, Spacer } from '../..';
 
 const IMAGE_HEIGHT = '225px';
 const IMAGE_WIDTH = '225px';
+const MOBILE_IMAGE_WIDTH = '100px';
+const MOBILE_IMAGE_HEIGHT = '100px';
 
 const GalleryWrapper = styled.div`
   align-items: center;
@@ -28,6 +30,10 @@ const ImageCard = styled.div`
   &:hover {
     box-shadow: 0px 0px 10px ${palette('grayscale', 4)};
   }
+
+  @media screen and (max-width: 640px) {
+    padding: 0.25rem;
+  }
 `;
 
 const ImageWrapper = styled.img`
@@ -36,6 +42,11 @@ const ImageWrapper = styled.img`
   object-fit: cover;
   height: ${IMAGE_HEIGHT};
   width: ${IMAGE_WIDTH};
+
+  @media screen and (max-width: 640px) {
+    height: ${MOBILE_IMAGE_HEIGHT};
+    width: ${MOBILE_IMAGE_WIDTH};
+  }
 `;
 
 const ModalImageWrapper = styled.img`
@@ -54,13 +65,17 @@ const Description = styled.footer`
   flex-wrap: wrap;
   margin: 1rem;
   text-align: center;
-  font-size: 1rem;
   color: ${palette('primary', 0)};
   font-family: ${font('tertiary')};
 `;
 
 const DescriptionLine = styled.p`
   margin: 0.1rem;
+  font-size: 1rem;
+
+  @media screen and (max-width: 640px) {
+    font-size: 0.9rem;
+  }
 `;
 
 const GalleryImages = () => {

@@ -42,7 +42,7 @@ const SplashLabel = styled.label`
   text-align: center;
 
   @media screen and (max-width: 1020px) {
-    font-size: 2.5rem;
+    font-size: 2.15rem;
     padding: 0 1rem;
   }
   `;
@@ -52,7 +52,7 @@ const LabelFlat = styled.img`
   height: auto;
 
   @media screen and (max-width: 1020px) {
-    width: 200px;
+    width: 150px;
     height: auto;
   }
 `;
@@ -60,7 +60,7 @@ const LabelFlat = styled.img`
 const FeaturedSectionWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: right;
+  justify-content: center;
   align-items: center;
   margin: 1rem 0 3rem 0;
 `;
@@ -68,12 +68,13 @@ const FeaturedSectionWrapper = styled.div`
 const FeaturedLabel = styled.label`
   font-size: 3rem;
   font-weight: 400;
+  text-align: center;
   color: ${palette('grayscale', 2)};
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
   margin: 2rem 0;
 
   @media screen and (max-width: 1020px) {
-    font-size: 2.5rem;
+    font-size:  2rem;
     padding: 0 1rem; 
   }
 `;
@@ -102,6 +103,11 @@ const FeaturedListingImg = styled.img`
     transform: scale(1.05);
     transition: transform 0.2s;
   }
+
+   @media screen  and (max-width: 1024px) {
+    width: 150px;
+    height: 150px;
+  }
 `;
 
 const AboutSectionWrapper = styled.div`
@@ -128,7 +134,7 @@ const AboutSection = styled.div`
   justify-content: center;
   align-items: center;
   width: 960px;
-  min-width: 800px;
+  min-width: 720px;
   height: 450px;
 
   @media screen and (max-width: 1020px) {
