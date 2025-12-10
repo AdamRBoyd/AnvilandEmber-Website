@@ -112,18 +112,29 @@ const ShippingCustomOrderText = styled.div`
   padding: 0.5rem 1rem;
   text-transform: uppercase;
   text-align: center;
+
+  @media (max-width: 640px) {
+    flex-direction: column;
+    font-size: 0.8rem;
+  }
 `;
 
 const FreeShippingText = styled.div`
   margin-right: 1rem;
+  @media (max-width: 640px) {
+    margin: 0 0 -0.25rem 0;
+  }
 `;
 
 const CustomOrderText = styled.div`
   margin-left: 1rem;
+  @media (max-width: 640px) {
+    margin-left: 0;
+  }
 `;
 
 const Shop = () => {
-
+  const isMobile = window.innerWidth <= 640;
   const { state } = useLocation();
 
   const [currentPage, setCurrentPage] = useState(state?.category || 'all');
@@ -282,8 +293,8 @@ const Shop = () => {
           </InnerNavigation>
         </NavContainer>
         <ShippingCustomOrderText>
-          <FreeShippingText>Free Shipping on Order over $35</FreeShippingText>
-          •
+          <FreeShippingText>Free Shipping on Orders over $35</FreeShippingText>
+          {isMobile ? null : ('|')}
           <CustomOrderText>Custom Orders Available</CustomOrderText>
         </ShippingCustomOrderText>
         <Spacer padding={0.5} />

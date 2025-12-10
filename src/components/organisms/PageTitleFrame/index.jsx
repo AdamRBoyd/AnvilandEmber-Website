@@ -26,11 +26,11 @@ const HeadingBackground = styled.div`
     justify-content: center;
     justify-self: center;
     width: 100%;
-    height: 150px;
+    height: fit-content;
     margin-bottom: 1rem;
 
     @media screen and (max-width: 640px) {
-      height: 80px;
+      margin-bottom: 0.5rem;
     }
     `;
 
@@ -46,10 +46,11 @@ const HeadingWrapper = styled(Heading)`
   align-content: center;
   text-align: center;
   text-transform: uppercase;
+  margin: 2rem 0;
 
   @media screen and (max-width: 640px) {
     font-size: 1.15rem;
-    margin: 2rem 0 2rem;
+    margin: 1.5rem 0;
     padding: 0 1rem;
   }
 `;
@@ -70,12 +71,17 @@ const SubtitleWrapper = styled.label`
   font-size: 1rem;
   font-weight: 500;
   line-height: 1.5rem;
-  margin-top: 0;
-  padding-bottom: 1.5rem;
+  margin: -1rem 0 2rem 0;
   text-align: center;
   text-transform: uppercase;
   text-shadow: 1px 1px 3px black;
   width: 80%;
+
+  @media screen and (max-width: 640px) {
+    font-size: 0.7rem;
+    width: 90%;
+    margin: -0.5rem 0 1.25rem 0;
+  }
 `;
 
 const PageTitleFrame = ({

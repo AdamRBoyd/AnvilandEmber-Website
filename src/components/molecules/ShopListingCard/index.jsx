@@ -7,18 +7,23 @@ import { Button, Link, Modal, Paragraph, Spacer } from '../..';
 
 const IMAGE_HEIGHT = '400px';
 const IMAGE_WIDTH = '400px';
+const MOBILE_IMAGE_HEIGHT = '250px';
+const MOBILE_IMAGE_WIDTH = '250px';
 
 const MainWrapper = styled.div`
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(2, auto);
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: auto;
+  
   color: ${palette('grayscale', 0)};
   gap: 1rem;
   width: 90%;
 
-  @media (min-width: 875px) {
-    grid-template-columns: repeat(2, auto);
-    grid-template-rows: auto;
+  @media (max-width: 875px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 `;
 
@@ -32,6 +37,10 @@ const DescriptionWrapper = styled.div`
   align-content: flex-start;
   justify-content: center;
   padding: 2rem;
+
+  @media screen and (max-width: 640px) {
+    padding: 0;
+  }
 `;
 
 const ParagraphWrapper = styled(Paragraph)`
@@ -57,6 +66,11 @@ const LargeImage = styled.img`
   height: ${IMAGE_HEIGHT};
   object-fit: cover;
   justify-self: flex-start;
+
+  @media screen and (max-width: 640px) {
+    width: ${MOBILE_IMAGE_WIDTH};
+    height: ${MOBILE_IMAGE_HEIGHT};
+  }
 `;
 
 const SmallImageRow = styled.div`
@@ -67,7 +81,7 @@ const SmallImageRow = styled.div`
   align-items: center;
   align-self: center;
   align-content: center;
-  width: 90%;
+  width: 100%;
   margin: 0.5rem;
 `;
 
@@ -100,34 +114,51 @@ const QuantityWrapper = styled.div`
   background-color: ${palette('grayscale', 6)};
   font-size: 0.8rem;
   font-weight: 550;
+
+  @media screen and (max-width: 640px) {
+    align-self: center;
+  }
 `;
 
 const PriceWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  padding: 0.5rem 0.8rem;
   border-top: 1px solid ${palette('grayscale', 5)};
   border-bottom: 1px solid ${palette('grayscale', 5)};
   color: ${palette('primary', 0)};
-  display: flex;
-  flex-direction: row;
-  font-size: 1.4rem;
-  font-weight: 500;
-  justify-content: center;
-  line-height: 1.5rem;
-  padding: 0.5rem 0.8rem;
-  text-align: center;
-  text-transform: uppercase;
+
+  @media screen and (max-width: 640px) {
+    flex-direction: column;
+    align-self: center;
+  }
 `;
 
 const PriceFromWrapper = styled.div`
   font-size: 1rem;
-  margin: 0 1.6rem 0 0.2rem;
+  margin: 0;
+
+  @media screen and (max-width: 640px) {
+    font-size: .8rem;
+    margin: 0 0 0.5rem;
+  }
 `;
 
 const VariationWrapper = styled.div`
   font-size: 1rem;
   margin: 0 0.2rem 0 1.6rem;
 
-
+  @media screen and (max-width: 640px) {
+    font-size: .7rem;
+    margin: 0.8rem 0 0 0;
+  }
 `;
 
 const SaleWrapper = styled.div`
@@ -138,23 +169,37 @@ const SaleWrapper = styled.div`
   flex-direction: row;
   font-size: 1.2rem;
   font-weight: 500;
-  justify-content: center;
+  justify-content: flex-start;
   line-height: 1.5rem;
-  text-align: center;
+  text-align: left;
   text-transform: uppercase;
   padding: 0.5rem 1rem;
+  margin-left: 3rem;
+
+  @media screen and (max-width: 640px) {
+    font-size: 1rem;
+    align-self: center;
+    margin-left: 0;
+  }
 `;
 
 const SalePrice = styled.div`
   text-decoration: line-through;
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: ${palette('grayscale', 3)};
-  margin-right: 0.7rem;
+  margin: 0 0.7rem;
+
+  @media screen and (max-width: 640px) {
+    margin-right: 0;
+    font-size: 1.4rem;
+    margin-bottom: 0.7rem;
+  }
 `;
 
 const StyledButton = styled(Button)`
   margin: 1rem 0;
   width: 100%;
+  max-width: 500px;
 `;
 
 const SoldOutInfo = styled.div`
@@ -201,6 +246,11 @@ const ShopListingCard = ({
     setIsOpen(true);
   };
 
+  const formatPrice = (amount) => {
+    const num = Number(amount);
+    return Number.isInteger(num) ? num : num.toFixed(2);
+  }
+
   return (
     <MainWrapper {...props}>
       <ImageCard>
@@ -238,15 +288,15 @@ const ShopListingCard = ({
             <>
               <SalePrice>
                 {price.currency === 'USD' ? '$' : price.currency}
-                {`${price.amount}`}
+                {formatPrice(price.amount)}
               </SalePrice>
               {price.currency === 'USD' ? '$' : price.currency}
-              {`${price.amount - price.amount * (salePercentage / 100)}`}
+              {formatPrice(price.amount - price.amount * (salePercentage / 100))}
             </>
           ) : (
             <>
               {price.currency === 'USD' ? '$' : price.currency}
-              {`${price.amount}`}
+              {formatPrice(price.amount)}
             </>
           )}
           <VariationWrapper>

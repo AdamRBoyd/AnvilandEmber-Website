@@ -167,6 +167,13 @@ const NewListingWrapper = styled(Label)`
   top: 0.5rem;
   right: 0.7rem;
   text-transform: uppercase;
+
+  @media screen and (max-width: 640px) {
+    font-size: 0.7rem; 
+    padding: 0.1rem 0.6rem;
+    top: 0.4rem;
+    right: 0.6rem;
+  }
 `;
 
 const PriceAndShippingStyles = css`
@@ -181,6 +188,9 @@ const PriceWrapper = styled(Label)`
   color: ${palette('primary', 0)};
   font-size: 1rem;
 
+  @media screen and (max-width: 640px) {
+    margin: -0.4rem 0;
+  }
 `;
 
 const PriceAndTitle = styled.div`
@@ -202,8 +212,12 @@ const PriceAndTitle = styled.div`
 const SalePriceWrapper = styled.div`
   font-size: 0.9rem;
   text-decoration: line-through;
-  margin: 0 0.3rem;
+  margin: 0 0.4rem 0 0;
   color: ${palette('grayscale', 3)};
+
+  @media screen and (max-width: 640px) {
+    font-size: 0.8rem; 
+  }
 `;
 
 const SalePercentWrapper = styled.div`
@@ -254,6 +268,12 @@ const ShopListingGalleryCard = ({
   listingId,
   ...props
 }) => {
+
+  const formatPrice = (amount) => {
+    const num = Number(amount);
+    return Number.isInteger(num) ? num : num.toFixed(2);
+  }
+
   return (
     <>
       {state === 'active' || showSold ? (
@@ -297,8 +317,8 @@ const ShopListingGalleryCard = ({
               <>
                 <PriceWrapper>
                   {hasVariations && <VariationsWrapper>From</VariationsWrapper>}
-                  {`$${price.amount - price.amount * (salePercentage / 100)}`}
-                  <SalePriceWrapper>{`$${price.amount}`}</SalePriceWrapper>
+                  <SalePriceWrapper>{`$${formatPrice(price.amount)}`}</SalePriceWrapper>
+                  {`$${formatPrice(price.amount - price.amount * (salePercentage / 100))}`}
                 </PriceWrapper>
                 <SalePercentWrapper>
                   {`(${salePercentage}% off)`}
@@ -307,7 +327,7 @@ const ShopListingGalleryCard = ({
             ) : (
               <PriceWrapper>
                 {hasVariations && <VariationsWrapper>From</VariationsWrapper>}
-                {`$${price.amount}`}
+                {`$${formatPrice(price.amount)}`}
               </PriceWrapper>
             )}
           </PriceAndTitle>
